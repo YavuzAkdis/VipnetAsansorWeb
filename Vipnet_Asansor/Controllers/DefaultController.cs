@@ -5,12 +5,12 @@ namespace Vipnet_Asansor.Controllers
 {
     public class DefaultController : Controller
     {
+        /* Anasayfa Yapısı  */
         public IActionResult Index()
         {
             return View();
         }
 
-        /* Anasayfa Yapısı  */
         public PartialViewResult FeaturePartial()
         {
             return PartialView();
@@ -46,6 +46,12 @@ namespace Vipnet_Asansor.Controllers
             return PartialView();
         }
 
-        /* Anasayfa Yapısı  */
+        /* Hakkımızda Yapısı  */
+
+        public IActionResult About()
+        {
+            return View();
+        }
+
     }
 }

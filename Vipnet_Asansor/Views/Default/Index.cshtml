@@ -46,28 +46,7 @@
     </div>
     <!-- Spinner End -->
     <div class="container">
-        <div id="topbar" class="d-none d-sm-block text-center font-weight-bold">
-
-            <div class="row ">
-                <div class="col d-flex align-items-center justify-content-start">
-                    <a href="mailto:info@vipnetasansor.com" class="text-dark">
-                        <i class="fa fa-envelope pe-2" aria-hidden="true"></i>info@vipnetasansor.com
-                    </a>
-                </div>
-                <div class="col d-flex align-items-center justify-content-center">
-                    <a href="https://endustriyel.com/" target="_blank">
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0" src="~/Vipnet Asansör/img/Endustriyel-Logo.png" style="width: 12rem;">
-                        </div>
-                    </a>
-                </div>
-                <div class="col d-flex align-items-center justify-content-end">
-                    <a href="tel:+901234567890" class="text-dark">
-                        <i class="fa fa-phone pe-2" aria-hidden="true"></i>+90 332 239 09 00
-                    </a>
-                </div>
-            </div>
-        </div>
+        @await Component.InvokeAsync("TopbarList")
     </div>
 
     <!-- Navbar Start -->
@@ -85,7 +64,7 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
                         <a href="index" class="nav-item nav-link active">Anasayfa</a>
-                        <a href="hakkimizda.html" class="nav-item nav-link">Hakkımızda</a>
+                        <a href="about" class="nav-item nav-link">Hakkımızda</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Ürünler</a>
                             <div class="dropdown-menu bg-light mt-2">

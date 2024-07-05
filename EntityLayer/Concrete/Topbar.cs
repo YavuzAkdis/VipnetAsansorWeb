@@ -11,12 +11,12 @@ namespace EntityLayer.Concrete
     {
         [Key]
         public int TopbarID { get; set; }
-        public string? Mail { get; set; }
-       
-        public string? ImageUrl { get; set; }
-     
-        public string? Phone { get; set; }
-      
+        public string? Email { get; set; }
+        public string? PhoneNumber { get; set; }
+        public string? LogoUrl { get; set; }
+
+        public string? LinkUrl { get; set; }
+   
 
     }
 }

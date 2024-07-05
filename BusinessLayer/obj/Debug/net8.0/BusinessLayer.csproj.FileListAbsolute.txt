@@ -36,3 +36,4 @@ C:\Users\HP\Desktop\vipnet web\2. Component oluşturuldu\Vipnet_Asansor\Business
 C:\Users\HP\Desktop\vipnet web\2. Component oluşturuldu\Vipnet_Asansor\BusinessLayer\obj\Debug\net8.0\BusinessLayer.pdb
 C:\Users\HP\Desktop\vipnet web\2. Component oluşturuldu\Vipnet_Asansor\BusinessLayer\obj\Debug\net8.0\BusinessLayer.genruntimeconfig.cache
 C:\Users\HP\Desktop\vipnet web\2. Component oluşturuldu\Vipnet_Asansor\BusinessLayer\obj\Debug\net8.0\ref\BusinessLayer.dll
+C:\Users\HP\Desktop\Vipnet_Asansor\BusinessLayer\obj\Debug\net8.0\BusinessLayer.sourcelink.json

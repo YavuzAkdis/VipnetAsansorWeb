@@ -1,0 +1,57 @@
+﻿@using EntityLayer.Concrete
+@model List<Topbar>
+
+
+<div id="topbar" class="d-none d-sm-block text-center font-weight-bold">
+
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col d-flex align-items-center justify-content-start">
+                <a href="mailto:@item.Email" class="text-dark">
+                    <i class="fa fa-envelope pe-2" aria-hidden="true"></i>@item.Email
+                </a>
+            </div>
+            <div class="col d-flex align-items-center justify-content-center">
+                <a href="@item.LinkUrl" target="_blank">
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid flex-shrink-0" src="@item.LogoUrl" style="width: 12rem;">
+                    </div>
+                </a>
+            </div>
+            <div class="col d-flex align-items-center justify-content-end">
+                <a href="tel:@item.PhoneNumber" class="text-dark">
+                    <i class="fa fa-phone pe-2" aria-hidden="true"></i>@item.PhoneNumber
+                </a>
+            </div>
+        }
+    </div>
+</div>
+
+
+
+@* 
+<div id="topbar" class="d-none d-sm-block text-center font-weight-bold">
+
+    <div class="row ">
+
+       
+        <div class="col d-flex align-items-center justify-content-start">
+            <a href="mailto:info@vipnetasansor.com" class="text-dark">
+                <i class="fa fa-envelope pe-2" aria-hidden="true"></i>info@vipnetasansor.com
+            </a>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+            <a href="https://endustriyel.com/" target="_blank">
+                <div class="d-flex align-items-center">
+                    <img class="img-fluid flex-shrink-0" src="~/Vipnet Asansör/img/Endustriyel-Logo.png" style="width: 12rem;">
+                </div>
+            </a>
+        </div>
+        <div class="col d-flex align-items-center justify-content-end">
+            <a href="tel:+903322390900" class="text-dark">
+                <i class="fa fa-phone pe-2" aria-hidden="true"></i>+90 332 239 09 00
+            </a>
+        </div>
+    </div>
+</div> *@

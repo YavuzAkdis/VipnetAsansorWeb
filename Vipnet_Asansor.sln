@@ -3,13 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vipnet_Asansor", "Vipnet_Asansor\Vipnet_Asansor.csproj", "{2B7F0CF2-FE3D-460E-BE1C-2FB3CCEC81E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vipnet_Asansor", "Vipnet_Asansor\Vipnet_Asansor.csproj", "{2B7F0CF2-FE3D-460E-BE1C-2FB3CCEC81E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{145E42BD-3D7C-4D3E-9057-B09F539529E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{145E42BD-3D7C-4D3E-9057-B09F539529E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{D725B9E3-D37D-4808-A2AA-0D0078A2905E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{D725B9E3-D37D-4808-A2AA-0D0078A2905E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityLayer", "EntityLayer\EntityLayer.csproj", "{8817FE2D-B389-40C2-97F9-C362F96B3CEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityLayer", "EntityLayer\EntityLayer.csproj", "{8817FE2D-B389-40C2-97F9-C362F96B3CEE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{803C3085-944D-42BD-A7E8-1C20A97D94D2}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

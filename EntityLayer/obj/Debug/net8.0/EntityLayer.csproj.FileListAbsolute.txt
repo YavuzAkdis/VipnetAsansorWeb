@@ -26,3 +26,4 @@ C:\Users\HP\Desktop\vipnet web\2. Component oluşturuldu\Vipnet_Asansor\EntityLa
 C:\Users\HP\Desktop\vipnet web\2. Component oluşturuldu\Vipnet_Asansor\EntityLayer\obj\Debug\net8.0\EntityLayer.pdb
 C:\Users\HP\Desktop\vipnet web\2. Component oluşturuldu\Vipnet_Asansor\EntityLayer\obj\Debug\net8.0\EntityLayer.genruntimeconfig.cache
 C:\Users\HP\Desktop\vipnet web\2. Component oluşturuldu\Vipnet_Asansor\EntityLayer\obj\Debug\net8.0\ref\EntityLayer.dll
+C:\Users\HP\Desktop\Vipnet_Asansor\EntityLayer\obj\Debug\net8.0\EntityLayer.sourcelink.json

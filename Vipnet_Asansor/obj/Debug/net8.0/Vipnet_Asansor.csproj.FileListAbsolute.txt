@@ -514,3 +514,4 @@ C:\Users\HP\Desktop\vipnet web\2. Component oluşturuldu\Vipnet_Asansor\Vipnet_A
 C:\Users\HP\Desktop\vipnet web\2. Component oluşturuldu\Vipnet_Asansor\Vipnet_Asansor\obj\Debug\net8.0\Vipnet_Asansor.pdb
 C:\Users\HP\Desktop\vipnet web\2. Component oluşturuldu\Vipnet_Asansor\Vipnet_Asansor\obj\Debug\net8.0\Vipnet_Asansor.genruntimeconfig.cache
 C:\Users\HP\Desktop\vipnet web\2. Component oluşturuldu\Vipnet_Asansor\Vipnet_Asansor\obj\Debug\net8.0\ref\Vipnet_Asansor.dll
+C:\Users\HP\Desktop\Vipnet_Asansor\Vipnet_Asansor\obj\Debug\net8.0\Vipnet_Asansor.sourcelink.json

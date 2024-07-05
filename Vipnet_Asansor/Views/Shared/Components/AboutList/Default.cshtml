@@ -1,0 +1,66 @@
+﻿@using EntityLayer.Concrete
+@model List<About>
+
+@foreach (var item in Model)
+{
+    <div class="row g-5 align-items-center">
+        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+            <div class="about-img ">
+                <img class="img-fluid " src="@item.ImageUrl">
+            </div>
+        </div>
+        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+
+            <h1 class="mb-4">
+                @item.Name
+            </h1>
+            <p class="mb-4">
+                @item.Title
+            </p>
+            <p class="mb-4">
+                @item.Description
+            </p>
+
+        </div>
+    </div>
+}
+
+
+@* <div class="row g-5 align-items-center">
+    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+        <div class="about-img ">
+            <img class="img-fluid " src="~/Vipnet Asansör/img/vipnetAsansor.png">
+        </div>
+    </div>
+    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+
+        <h1 class="mb-4">
+            VIPNET Asansör; Endüstriyel Elektriğin, sektörde uzun
+            yıllara dayanan deneyimi ve teknolojiyle harmanlanmış
+            bir vizyonu birleştirerek asansör elektronik ürünleri
+            markasıdır.
+        </h1>
+        <p class="mb-4">
+            Yenilikçi yaklaşımı ve müşteri odaklı
+            kalitesiyle, sektöründe öncü olmayı hedefleyen VIPNET
+            Asansör, endüstriyel tesislerden konutlara kadar geniş
+            bir yelpazedeki ihtiyaçlara çözüm sunmaktadır.
+            VIPNET Asansör, güvenilirliği ve kaliteyi temel
+            ilke edinerek üretim yapmakta ve müşterilerinin
+            beklentilerini en üst düzeyde karşılamayı
+            hedeflemektedir. Firma, yüksek standartlarda ürünler
+            sunarken aynı zamanda çevreye duyarlılığı da göz
+            önünde bulundurarak sürdürülebilir bir gelecek için
+            çalışmaktadır.
+        </p>
+        <p class="mb-4">
+            Firmanın misyonu, müşterilerine en iyi hizmeti
+            sunarken sürekli olarak yenilikçi çözümler geliştirmek
+            ve sektöründe lider konumunu korumaktır. VIPNET
+            Asansör, müşteri memnuniyetini esas alarak, kalite
+            standartlarını sürekli olarak yükseltmeyi ve sektöründe
+            öncü bir marka olmayı hedeflemektedir.
+        </p>
+
+    </div>
+</div> *@

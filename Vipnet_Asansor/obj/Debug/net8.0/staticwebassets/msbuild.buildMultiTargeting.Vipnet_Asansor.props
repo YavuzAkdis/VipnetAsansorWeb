@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Vipnet_Asansor.props" />
+</Project>

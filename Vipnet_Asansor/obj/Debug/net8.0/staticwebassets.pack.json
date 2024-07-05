@@ -1,0 +1,917 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Vipnet_Asansor.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Vipnet_Asansor.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\.vs\\AI-html-1.0.0\\v17\\DocumentLayout.json",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\.vs\\AI-html-1.0.0\\v17\\DocumentLayout.json"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\.vs\\VSWorkspaceState.json",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\.vs\\VSWorkspaceState.json"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\404.html",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\404.html"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\READ-ME.txt",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\READ-ME.txt"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\arge.html",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\arge.html"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\css\\style.css",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\hakkimizda.html",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\hakkimizda.html"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\iletisim.html",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\iletisim.html"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\Adsız tasarım (1).svg",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\Adsız tasarım (1).svg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\Endustriyel-Logo2.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\Endustriyel-Logo2.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\Vip_Asansor_Beyaz.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\Vip_Asansor_Beyaz.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\Vip_Asansor_Logo.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\Vip_Asansor_Logo.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\Vip_Asansor_Logo2.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\Vip_Asansor_Logo2.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\arge-sertifikasyon.jpg",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\arge-sertifikasyon.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\arge.jpg",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\arge.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\asansor (10).jpg",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\asansor (10).jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\asansor (12).png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\asansor (12).png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\asansor (8).jpg",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\asansor (8).jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\asansor.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\asansor.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\asansorKarti.mp4",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\asansorKarti.mp4"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\asansorKarti.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\asansorKarti.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\asansorTasarim.jpg",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\asansorTasarim.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\asansör-kart-detay.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\asansör-kart-detay.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\daxler.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\daxler.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\dizgi.jpg",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\dizgi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\dizgi2.jpg",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\dizgi2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\endustriyel-logo.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\endustriyel-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\feature2.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\feature2.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\feature3.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\feature3.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\footer.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\footer.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\fotosel.jpg",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\fotosel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\icon-next.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\icon-next.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\icon-prev.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\icon-prev.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\iletisimHeader.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\iletisimHeader.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\kapiFotoseli.mp4",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\kapiFotoseli.mp4"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\kapi_fotoseli.jpg",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\kapi_fotoseli.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\kart.cizgisel2.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\kart.cizgisel2.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\monoStabil.mp4",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\monoStabil.mp4"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\monoStabil2.jpg",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\monoStabil2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\mono_stabil.jpg",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\mono_stabil.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\pLogo.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\pLogo.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\pLogo10.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\pLogo10.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\pLogo2.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\pLogo2.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\pLogo3.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\pLogo3.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\pLogo4.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\pLogo4.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\pLogo5.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\pLogo5.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\pLogo6.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\pLogo6.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\pLogo7.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\pLogo7.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\pLogo8.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\pLogo8.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\pLogo9.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\pLogo9.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\vip_Elektronik.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\vip_Elektronik.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\vipnet-Solar.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\vipnet-Solar.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\vipnet-img.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\vipnet-img.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\vipnetAsansor.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\vipnetAsansor.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\vipnetIcon.jpg",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\vipnetIcon.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\index.html",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\js\\main.js",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\kapi-fotoseli.html",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\kapi-fotoseli.html"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\lib\\animate\\animate.css",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\lib\\animate\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\lib\\animate\\animate.min.css",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\lib\\animate\\animate.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\lib\\counterup\\counterup.min.js",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\lib\\counterup\\counterup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\lib\\easing\\easing.js",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\lib\\easing\\easing.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\lib\\easing\\easing.min.js",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\lib\\easing\\easing.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\lib\\owlcarousel\\LICENSE",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\lib\\owlcarousel"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\lib\\owlcarousel\\assets\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\lib\\owlcarousel\\assets\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\lib\\owlcarousel\\assets\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\lib\\owlcarousel\\assets\\owl.carousel.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\lib\\owlcarousel\\assets\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\lib\\owlcarousel\\assets\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\lib\\owlcarousel\\assets\\owl.theme.default.css",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\lib\\owlcarousel\\assets\\owl.theme.default.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\lib\\owlcarousel\\assets\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\lib\\owlcarousel\\assets\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\lib\\owlcarousel\\assets\\owl.theme.green.css",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\lib\\owlcarousel\\assets\\owl.theme.green.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\lib\\owlcarousel\\assets\\owl.theme.green.min.css",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\lib\\owlcarousel\\assets\\owl.theme.green.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\lib\\owlcarousel\\assets\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\lib\\owlcarousel\\assets\\owl.video.play.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\lib\\owlcarousel\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\lib\\owlcarousel\\owl.carousel.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\lib\\owlcarousel\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\lib\\owlcarousel\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\lib\\waypoints\\links.php",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\lib\\waypoints\\links.php"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\lib\\waypoints\\waypoints.min.js",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\lib\\waypoints\\waypoints.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\lib\\wow\\wow.js",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\lib\\wow\\wow.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\lib\\wow\\wow.min.js",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\lib\\wow\\wow.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\mono-stabil.html",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\mono-stabil.html"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_accordion.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_accordion.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_alert.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_badge.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_breadcrumb.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_button-group.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_button-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_buttons.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_card.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_card.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_carousel.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_carousel.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_close.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_close.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_containers.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_containers.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_dropdown.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_forms.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_functions.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_functions.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_grid.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_helpers.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_helpers.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_images.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_images.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_list-group.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_modal.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_modal.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_nav.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_nav.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_navbar.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_navbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_offcanvas.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_offcanvas.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_pagination.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_popover.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_popover.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_progress.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_progress.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_reboot.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_root.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_root.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_spinners.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_spinners.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_tables.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_tables.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_toasts.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_toasts.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_tooltip.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_tooltip.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_transitions.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_transitions.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_type.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_type.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_utilities.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\bootstrap-grid.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\bootstrap-grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\bootstrap-reboot.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\bootstrap-reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\bootstrap-utilities.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\bootstrap-utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\bootstrap.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\forms\\_floating-labels.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\forms\\_floating-labels.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\forms\\_form-check.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\forms\\_form-check.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\forms\\_form-control.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\forms\\_form-control.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\forms\\_form-range.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\forms\\_form-range.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\forms\\_form-select.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\forms\\_form-select.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\forms\\_form-text.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\forms\\_form-text.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\forms\\_input-group.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\forms\\_input-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\forms\\_labels.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\forms\\_labels.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\forms\\_validation.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\forms\\_validation.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\helpers\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\helpers\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\helpers\\_colored-links.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\helpers\\_colored-links.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\helpers\\_position.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\helpers\\_position.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\helpers\\_ratio.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\helpers\\_ratio.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\helpers\\_stretched-link.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\helpers\\_stretched-link.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\helpers\\_text-truncation.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\helpers\\_text-truncation.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\helpers\\_visually-hidden.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\helpers\\_visually-hidden.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_alert.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_border-radius.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_border-radius.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_box-shadow.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_box-shadow.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_breakpoints.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_breakpoints.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_buttons.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_caret.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_caret.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_color-scheme.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_color-scheme.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_container.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_container.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_deprecate.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_deprecate.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_forms.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_gradients.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_gradients.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_grid.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_image.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_image.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_list-group.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_lists.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_lists.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_pagination.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_reset-text.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_reset-text.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_resize.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_resize.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_table-variants.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_table-variants.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_text-truncate.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_text-truncate.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_transition.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_transition.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_utilities.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_visually-hidden.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\mixins\\_visually-hidden.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\utilities\\_api.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\utilities\\_api.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\scss\\bootstrap\\scss\\vendor\\_rfs.scss",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\scss\\bootstrap\\scss\\vendor\\_rfs.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\vpc-edc-01-asansor-kontrol-karti.html",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\vpc-edc-01-asansor-kontrol-karti.html"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Vipnet_Asansor.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Vipnet_Asansor.props",
+      "PackagePath": "build\\Vipnet_Asansor.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Vipnet_Asansor.props",
+      "PackagePath": "buildMultiTargeting\\Vipnet_Asansor.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Vipnet_Asansor.props",
+      "PackagePath": "buildTransitive\\Vipnet_Asansor.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,204 @@
+﻿@using EntityLayer.Concrete
+@model List<Questions>
+
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+            <h2 class="mb-4">Sıkça Sorulan Sorular</h2>
+            <div class="border-bottom"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="accordion" id="accordionFAQ1">
+                    @foreach (var item in Model.Take(Model.Count / 2))
+                    {
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.1s">
+                            <h2 class="accordion-header" id="headingOne@item.Id">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne@item.Id" aria-expanded="false" aria-controls="collapseOne@item.Id">
+                                    @item.Title
+                                </button>
+                            </h2>
+                            <div id="collapseOne@item.Id" class="accordion-collapse collapse" aria-labelledby="headingOne@item.Id"
+                                 data-bs-parent="#accordionFAQ1">
+                                <div class="px-3 accordion-body">
+                                    @item.Description
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="accordion" id="accordionFAQ2">
+                    @foreach (var item in Model.Skip(Model.Count / 2))
+                    {
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.1s">
+                            <h2 class="accordion-header" id="headingTwo@item.Id">
+
+
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo@item.Id" aria-expanded="false" aria-controls="collapseTwo@item.Id">
+                                    @item.Title
+                                </button>
+                            </h2>
+                            <div id="collapseTwo@item.Id" class="accordion-collapse collapse" aria-labelledby="headingTwo@item.Id"
+                                 data-bs-parent="#accordionFAQ2">
+                                <div class="px-3 accordion-body">
+                                    @item.Description
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Bootstrap 5 accordion initialization
+    var accordions = document.querySelectorAll('.accordion-button');
+    accordions.forEach(function (accordion) {
+        accordion.addEventListener('click', function () {
+            var collapse = this.parentElement.nextElementSibling;
+            if (collapse.classList.contains('show')) {
+                collapse.classList.remove('show');
+            } else {
+                collapse.classList.add('show');
+            }
+        });
+    });
+</script>
+
+@* <div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="mx-auto text-center wow fadeın" data-wow-delay="0.1s" style="max-width: 500px;">
+
+            <h2 class="mb-4">sıkça sorulan sorular</h2>
+            <div class="border-bottom"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="accordion" id="accordionfaq1">
+                    <div class="accordion-item wow fadeın" data-wow-delay="0.1s">
+                        <h2 class="accordion-header" id="headingone">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseone" aria-expanded="false" aria-controls="collapseone">
+                                how to build a website?
+                            </button>
+                        </h2>
+                        <div id="collapseone" class="accordion-collapse collapse" aria-labelledby="headingone"
+                             data-bs-parent="#accordionfaq1">
+                            <div class="accordion-body">
+                                dolor nonumy tempor elitr et rebum ipsum sit duo duo. diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. sit rebum magna duo labore no diam.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeın" data-wow-delay="0.2s">
+                        <h2 class="accordion-header" id="headingtwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">
+                                how long will it take to get a new website?
+                            </button>
+                        </h2>
+                        <div id="collapsetwo" class="accordion-collapse collapse" aria-labelledby="headingtwo"
+                             data-bs-parent="#accordionfaq1">
+                            <div class="accordion-body">
+                                dolor nonumy tempor elitr et rebum ipsum sit duo duo. diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. sit rebum magna duo labore no diam.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeın" data-wow-delay="0.3s">
+                        <h2 class="accordion-header" id="headingthree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapsethree">
+                                do you only create html websites?
+                            </button>
+                        </h2>
+                        <div id="collapsethree" class="accordion-collapse collapse" aria-labelledby="headingthree"
+                             data-bs-parent="#accordionfaq1">
+                            <div class="accordion-body">
+                                dolor nonumy tempor elitr et rebum ipsum sit duo duo. diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. sit rebum magna duo labore no diam.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeın" data-wow-delay="0.4s">
+                        <h2 class="accordion-header" id="headingfour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsefour" aria-expanded="true" aria-controls="collapsefour">
+                                will my website be mobile-friendly?
+                            </button>
+                        </h2>
+                        <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour"
+                             data-bs-parent="#accordionfaq1">
+                            <div class="accordion-body">
+                                dolor nonumy tempor elitr et rebum ipsum sit duo duo. diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. sit rebum magna duo labore no diam.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="accordion" id="accordionfaq2">
+                    <div class="accordion-item wow fadeın" data-wow-delay="0.5s">
+                        <h2 class="accordion-header" id="headingfive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                                will you maintain my site for me?
+                            </button>
+                        </h2>
+                        <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive"
+                             data-bs-parent="#accordionfaq2">
+                            <div class="accordion-body">
+                                dolor nonumy tempor elitr et rebum ipsum sit duo duo. diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. sit rebum magna duo labore no diam.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeın" data-wow-delay="0.6s">
+                        <h2 class="accordion-header" id="headingsix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+                                ı’m on a strict budget. do you have any low cost options?
+                            </button>
+                        </h2>
+                        <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix"
+                             data-bs-parent="#accordionfaq2">
+                            <div class="accordion-body">
+                                dolor nonumy tempor elitr et rebum ipsum sit duo duo. diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. sit rebum magna duo labore no diam.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeın" data-wow-delay="0.7s">
+                        <h2 class="accordion-header" id="headingseven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
+                                will you maintain my site for me?
+                            </button>
+                        </h2>
+                        <div id="collapseseven" class="accordion-collapse collapse" aria-labelledby="headingseven"
+                             data-bs-parent="#accordionfaq2">
+                            <div class="accordion-body">
+                                dolor nonumy tempor elitr et rebum ipsum sit duo duo. diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. sit rebum magna duo labore no diam.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeın" data-wow-delay="0.8s">
+                        <h2 class="accordion-header" id="headingeight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseeight" aria-expanded="false" aria-controls="collapseeight">
+                                ı’m on a strict budget. do you have any low cost options?
+                            </button>
+                        </h2>
+                        <div id="collapseeight" class="accordion-collapse collapse" aria-labelledby="headingeight"
+                             data-bs-parent="#accordionfaq2">
+                            <div class="accordion-body">
+                                dolor nonumy tempor elitr et rebum ipsum sit duo duo. diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. sit rebum magna duo labore no diam.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> *@

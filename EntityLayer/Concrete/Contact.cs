@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EntityLayer.Concrete
+{
+    public class Contact
+    {
+        [Key]
+        public int ContactID { get; set; }
+        public string? Phone { get; set; }
+        public string? Mail { get; set; }
+        public string? Address { get; set; }
+        public string? Maps { get; set; }
+
+        // Navigasyon özelliği
+        public ICollection<ContactTranslation>? ContactTranslations { get; set; }
+    }
+
+}

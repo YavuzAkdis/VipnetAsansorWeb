@@ -1,0 +1,263 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\Vipnet Asansör\.vs\AI-html-1.0.0\v17\DocumentLayout.json" />
+    <Content Include="wwwroot\Vipnet Asansör\.vs\VSWorkspaceState.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Vipnet Asansör\.git\COMMIT_EDITMSG" />
+    <None Include="wwwroot\Vipnet Asansör\.git\config" />
+    <None Include="wwwroot\Vipnet Asansör\.git\description" />
+    <None Include="wwwroot\Vipnet Asansör\.git\HEAD" />
+    <None Include="wwwroot\Vipnet Asansör\.git\hooks\applypatch-msg.sample" />
+    <None Include="wwwroot\Vipnet Asansör\.git\hooks\commit-msg.sample" />
+    <None Include="wwwroot\Vipnet Asansör\.git\hooks\fsmonitor-watchman.sample" />
+    <None Include="wwwroot\Vipnet Asansör\.git\hooks\post-update.sample" />
+    <None Include="wwwroot\Vipnet Asansör\.git\hooks\pre-applypatch.sample" />
+    <None Include="wwwroot\Vipnet Asansör\.git\hooks\pre-commit.sample" />
+    <None Include="wwwroot\Vipnet Asansör\.git\hooks\pre-merge-commit.sample" />
+    <None Include="wwwroot\Vipnet Asansör\.git\hooks\pre-push.sample" />
+    <None Include="wwwroot\Vipnet Asansör\.git\hooks\pre-rebase.sample" />
+    <None Include="wwwroot\Vipnet Asansör\.git\hooks\pre-receive.sample" />
+    <None Include="wwwroot\Vipnet Asansör\.git\hooks\prepare-commit-msg.sample" />
+    <None Include="wwwroot\Vipnet Asansör\.git\hooks\push-to-checkout.sample" />
+    <None Include="wwwroot\Vipnet Asansör\.git\hooks\update.sample" />
+    <None Include="wwwroot\Vipnet Asansör\.git\index" />
+    <None Include="wwwroot\Vipnet Asansör\.git\info\exclude" />
+    <None Include="wwwroot\Vipnet Asansör\.git\logs\HEAD" />
+    <None Include="wwwroot\Vipnet Asansör\.git\logs\refs\heads\main" />
+    <None Include="wwwroot\Vipnet Asansör\.git\logs\refs\remotes\origin\main" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\00\366d1d89e791ac62f0ea861a46dbb5204c6f94" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\05\167efaff521dd17ed43d14b11dd671c637af38" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\05\6453ea1a1e8967ab3153afa093b1195794abbd" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\06\e70f701c959a26137e3046f413ef47f31e96f3" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\08\7c61fe26206501981e0c86cb84c3c7a0cfbc20" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\08\df1b84a7e625d4f0995d111ff179da692df20a" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\09\cbb9cd99c683b7f6808eb490419283776c36a7" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\0c\b0bdf1a6f3a51aca7c1c99efb3f3ecf56ec480" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\0d\3c3776d502e8e7d9a2783d7fc872e55d446287" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\0f\761c76b7af1e65580b9724eb015a264f673e8b" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\10\0c75087effe7901ba110fc6e6760edb5947417" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\10\aefc52697e8e399f8b024f75bf3a1b6f961e4e" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\12\e48fc67e6399d6e965a65bba0cc1c369c9c3ab" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\13\aa0569a50710789a992d2e4cb3591587501b1b" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\13\fabd958a49ea362fda16f562f8d063cc05340c" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\14\0052936cbb7d02405f3b774fceefe142ea2952" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\14\10c68dd3c1b656bdf73023f20cef3888ba38bf" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\15\d5061ad6d2abc613fe9e78497dcc6b04a05aa2" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\1b\149974d77cadbf7b2ff53abf169bb55a1e3224" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\1d\22f1d749e0025a511ebcdaa100985775d7ad1e" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\1e\17606f41b87b96d8b7ffee074d768e92e5b19c" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\1e\79e03adecd83496d25f13eee07e4c2159dae9d" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\1e\ce042ac23a93193597167153b7373b7ff28e62" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\23\90ee339481729e13d0994351c2ad0f5b687ef5" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\23\a7bd0c8fd99da50c04888757409bf4be742006" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\25\185626698393b1365199f93aadd8d3350dc9d5" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\28\3462fd56010cefaa7354f9fac9ee588e7ad829" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\29\05df45cd14bea9571999fbecb64732d9572d61" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\29\114fc8168f2659f5ab2e657dff8792efd8c459" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\29\93bf7dedd65a6ac97441616a946f1c1f512871" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\2a\74013969430a053d1e20ebbac75db39662cca2" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\2a\9cc467f25d08a45a51d8019fcb0af4a802909b" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\2c\cef11b7c27cccbd261fe2facfb39ff071002c4" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\30\d7e0698f3d3c8927c6663efa55b1eda40eccda" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\31\01b380da0438fb07e09b1ebdddc5245357dc99" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\31\851eb721916cebddabaa2bd0e65b551643ce37" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\32\a0f68ccd710579889a6ad5c0c3cb7946e3cd86" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\32\f42799093def3ccda9672e2ee9d29c67d4d4f4" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\34\f1e84edf2aad9df97936539fd3882290ca376f" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\35\04bb1aa5d7aa2c3d75aedd4a03916afaa7e4d9" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\35\204698838e4dc9c67b6985740b6f571c7ce208" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\35\31cbb42dfa32c8f9a9ea88f2a7cff52ec45353" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\35\4f5648b8f860800fee8919b0be4db000624711" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\36\721f8b1ec33612a7dacb8f998b430b6ed01bbb" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\36\f4b48e62ed40844f544f85f83d833c58d9608e" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\37\c1b1ed91bb5fea700b2c9a9df332e69d77bbbd" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\39\ecafcd2f0d5be8843b4be9ff5d7ac0d608c350" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\3a\3081891a981804c751ebc8019a34186437b5df" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\3b\9c7768ea15988f1e4b5a8db610f9a333ded6ec" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\3c\927cf5951a474dc88d70e60d0faa85445d148e" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\3e\8e0561e55eeab9fe6f007b7994a2344f6c7b3e" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\40\b27e4b61bd031be72f72f04113e3cec38876f8" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\41\3b8a49256662f92d965f6f1128769b643edf95" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\41\72541f3fe5b539778a05ee99ec9e26616a7ca6" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\42\dabed83b1338c1ddc64f2d009012710d98204d" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\43\f86f089055338b3d701e0effed13cb49d1879e" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\44\167d1b8b293e7cc430b915a89cfffbca60fb71" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\44\77591df3c3ee55799628f3969249d14a4ed2f6" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\47\60ff03d19c1fc18f53160c4b34e2468fbec0d8" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\48\0ee3da685e4d512e3826ffc2f960f7fae0bb56" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\4b\0f0360ba21f25b85ea5ec4f7c78e1abd7344e7" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\4d\2370a0bf3c9244bca1b2b482a6b9f25572eea6" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\50\368293a99b12b238c9b2be91491b3f440dda40" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\51\1b52a881196c9559a94d9cb0f84ff6d7891d1c" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\51\3898644d269facf02002502d5e34819c67939e" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\55\260ceaa1ddf1a11a79ed8e0e00ee3d353e40aa" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\56\86f31fe0928add916982a2896c7c9e98ea5f3d" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\57\15ab00cedf2f7517c38d4d8adf630eca379687" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\57\86e68f752815530172010f201d2de91f20ee04" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\58\171510df59494e368aa37da8f3cce92c5c65a4" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\58\49156ac79862d4c8d53ca440f2a972a4ab79ae" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\59\836030778b5cfcedf6abcc548f83532628711d" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\5c\533d7f5daa6a9d7c10dc64a15563ddbfc8f868" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\5c\f897253aaeeb66b9d34558b6b5510d8fb322cc" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\5d\0218d4665113fc6cbde7126edf9662cc56108e" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\5d\8eceb7245368e9df486447cbd8069acbf6b762" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\5e\43aea991127403803b7cab0e2931d6dcfc8b5a" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\5f\92f60700d5f93a082441b8d828caadfc313da5" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\60\9ece0a51a92e1f4a8bc1b318850c043b30bd86" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\61\6decbce315dfd273605fa67fb74e99ed475b1a" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\62\1ab76d0bb1b40b7f4a56c5af38f2bb2e6bb338" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\62\e1d398e3529d998c6ac989973a534477014f31" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\62\f0da99b7ac5f3b216ddeaa67ceeb8462e4cd44" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\63\c4c71da0ea12d80bbf1e8d18e2f154abcc793f" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\64\21dac9a85271cba3f65b5e7116c7fd907b9e72" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\66\f233a63c988deb5a59dde3bba962082fbdfd57" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\67\dc71991a30ec8c44c674bd9e008f965f86a853" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\69\5731ac9e31d45f6a0f5eabbaf22359d7332717" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\69\9398ca4a9717d38b2ddae453edecfe32613fb0" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\6b\6114114f4e89a1f2d0e911ff090e541af1260c" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\6c\0a3676ca666ca7bb661c1996f623c405cffbde" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\6d\f2dfc95b9bf1daab044296b52ca2e35808d6cf" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\6f\dad5c921fb1cf68777f460ed8861e50566e932" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\71\a1c755afa64426e48948d6dd47d4317cf9da19" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\73\74db527f0e6b9857174538463e00e878717eab" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\74\b25ca873029f0fb5f6241b09471dd3ece500a6" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\76\8d6343f8c4119ce87c195fcb8ebbd0a0af0598" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\76\e79da66eb30d61bc8f37fe8790f288db798607" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\78\d824608f403f81edafe451a3144ba4af74bb1a" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\79\8753ecba27e9afdf3f9ed261e2c1f28d8e9d8f" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\79\a6bfbf0be266ef12f4bbf5fa8090b1fabe5e30" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\7a\3848d94b2cccba625fda7d26a47fa4551c1fc7" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\7b\09dcf5af0436b4cef3bf56082ec6c61cdfccd7" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\7b\17d849ac0f6f8aab561e4c54065c3180941658" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\7d\aa9f10d835747d0e8f82841cfb316af96904ea" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\7f\4a5654bf6cfbb8591cf923ad517257a3967cd4" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\81\5991c40e8186c494e01983e4638799ec663994" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\81\bcd5095477ed21991fa6d83cb9271af51ca1eb" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\81\c460ab7b4a7aadafa02d914b98806ba23df830" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\83\a972cabdba83614754cc7f00648736842a2183" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\86\fcc8693956208ef8d7729002371c635396455c" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\8b\2e2b8eb6f05d61a6194474b4ddf2489487471f" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\8c\167dedf54873890f514809e2fa56bc5bf52aba" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\8d\a95a22e6fd8db850f9a7f717398d1f5c8f3e8d" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\8d\db861fceec4d31041525aa56e23da58ac26ee7" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\8f\566d12f8461a8b609f5779630014c5763f631f" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\90\497aa0a91bb0ceb77c08b8651dbbacdcee3022" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\91\8f4ac75f6b67251b10c282c265ef9f2c36a979" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\91\973731c2ce7bb8d0e6177b762f1fdcb75b412c" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\93\4ff9419ff793930053ed18a08bc0c7764a2856" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\93\9e73f267131d025f7db4983aa7c39ac0a68445" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\93\f675b2ca5c2904bc6514d7160236dd38651c38" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\99\a93ca664fe775a5358705185f959b56b5a3561" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\9a\5b08ccc3ebcd1660e9977b873fab4f2fd02d3b" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\9a\ab5395c6887ae63db13825f142be4ca7d5610e" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\9b\9566f4b968a5d5325c7ece1f10fee3b5d8e674" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\9c\466662e07121eb6966c2780ecbdb8e95dabdfe" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\9f\d0fb02a42c4ea47054c40a9ab1312138780bc9" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\a0\bafe75721b5bbde27fb01d955ac58809c50516" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\a4\a2c77cf6783fd5e61837fb257359fce4dff511" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\a5\5555e2e9210791d7b7e706c161055229d1aa18" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\a6\19ec28980598e01afee9665b5a2b39b4c90275" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\a8\27ff5c11495d612b925707d9c1c3f6f50f2c12" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\aa\5df3113a1e6e25adbbb9c3ced759019b6e2a85" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\ac\6f431eeb55ab62aaeafe0e7b467a6c9976a412" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\ae\1d841d551e1b6ff450137a22e52736d1d735c4" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\ae\1e3cb8b3bd6b14130793d5e60285461c1e4505" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\ae\f9e7561207ac7758bcee866ff06fed064b9cf0" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\b1\1b45a37bb04e620d288b2434a9b66218870966" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\b2\d524ca1443466e483836bca225d58f76b15800" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\b3\4250a71000f60f100898704f903a6b6b5225e2" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\b6\494d27ae63db066e6ebbe34959a81427527dde" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\ba\777b5c60e173b34bb56ff74991baa4fd96e989" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\bb\d6bfb29b69c097327c96b289b090b00d074b97" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\bc\b4aa306fa87355da707accb70414d2fcd0d0ce" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\bd\afa419f2cd6bb6e81bd479f0875b37f0ea7e5b" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\be\bc45ef61138b14a868a94e80b2eaab01048727" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\c0\6fa4a9802aa7bae86699f03e0746cb7df5ab0b" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\c1\d3ea7dfea40ccac5fcb76b37141c3631af06db" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\c4\8123a716c8d2df599e7297d9265f68570d444b" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\c6\9aa765734860f73f439f7195b98fef39d15ae7" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\ca\44b4b83c6a4327a00a23e47df368f40f08b250" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\cb\9f1f6584a714b2a71dd995e2a12d04db16f273" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\cd\149f9f66d752dd7c9e3a93dd6344ae90552260" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\cd\c8034eb357a5057a3842961264422b40b2546d" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\cd\d2df8fe1edaf5831e6f1ed619f30e1875d0443" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\d1\72e2e8f196fde99a46591a67056aa770faf299" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\d3\89c3042e1d2f4d3e9d30d9661551006d0d6a95" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\d3\962f969930b0a5cb13fa079f273167082abf68" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\d4\37f6d8f4202e6ab29c6b41d97e3c56bd73cfda" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\d4\9ad74056a76c3984f3750e143611e1aa37992d" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\d5\6325868f1e806fb6387bf6ff578f8e861a1083" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\d7\57eac7404ae08d6f4c38254b2d6cc93b9a0004" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\dd\35170b6d95e8c67021e9dc976d51e41e80c030" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\df\070bc59634213b5f9d49b4d6169d61dd6ac40d" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\df\ef48adf3a91926d55cde2dc3c50a1bf29de3c9" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\e0\282da16e435a861317a5a1eb110e63864e547b" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\e1\df779f840c9772033df27891948cf767f09bd4" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\e2\9cc6edfe6d83692fe233903ab8f0f5d00040fa" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\e3\314219f6413db9d32b68185422532aa1bcd974" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\e4\6b66e04c2577666dedbc424b67c85a704408a4" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\e5\5415f2b8185aa85a48cd0dbd2a5d2894906754" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\e6\c0f6412589d2f32177480a3e10a3ce1c6848bd" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\e8\171a03b3320e4ca4d2467226230ef0c60b7946" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\e9\2522a94d82a571b84ac1de470bcb70b176023c" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\ed\7bc9c13a85bf81c49483acabd1f6b2b9a6db83" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\ed\d4f2778b2f007bc12d97e32832af60300e0082" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\ee\4287c9201d3035e6b7fc38935836e53fd25597" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\ee\6044d0dd32907ff94f8ed4331499c0b3ee6bf6" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\ee\c085789a7505b80ade30306a99a4e2610ea203" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\f0\80d1a23437b8d2bfc4a0109dd998661fcff87f" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\f1\d9945641bc9217564694d2adaf35089f6dfeed" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\f3\eb59511da6cac0f35147f853c81fd8af0a87fb" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\f6\d5cbdc1ef83c398946d689f08e3922178eb1b6" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\f7\fafe743ac2193eea3221e13776c319892fd03a" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\f8\8f1e5f5e953950d6b7ec35e32e2ec28611677c" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\fc\62ceb88255c01cf964b16d49ec3f232d4a34f2" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\fc\7dae4fd69165ce96504c35282b476b1a4034c8" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\fd\c1dc80ca3c77406bc010aa09de33f86483ac30" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\fd\d8d605adeae6b5dc666031f0caaa251f709687" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\ff\6d0e74e5f2d4512e3945a0a1178dc1a635e6d0" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\ff\b27d869c730be6924ac71449414f759ef5b99d" />
+    <None Include="wwwroot\Vipnet Asansör\.git\objects\ff\c62bb285df049f1957dfa4088592b07728c7a0" />
+    <None Include="wwwroot\Vipnet Asansör\.git\refs\heads\main" />
+    <None Include="wwwroot\Vipnet Asansör\.git\refs\remotes\origin\main" />
+    <None Include="wwwroot\Vipnet Asansör\.vs\AI-html-1.0.0\config\applicationhost.config" />
+    <None Include="wwwroot\Vipnet Asansör\.vs\AI-html-1.0.0\FileContentIndex\e2c35c62-dfe8-446d-9ab9-ddf2b91eccad.vsidx" />
+    <None Include="wwwroot\Vipnet Asansör\.vs\slnx.sqlite" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj" />
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj" />
+    <ProjectReference Include="..\EntityLayer\EntityLayer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Vipnet Asansör\.git\objects\info\" />
+    <Folder Include="wwwroot\Vipnet Asansör\.git\objects\pack\" />
+    <Folder Include="wwwroot\Vipnet Asansör\.git\refs\tags\" />
+  </ItemGroup>
+
+</Project>

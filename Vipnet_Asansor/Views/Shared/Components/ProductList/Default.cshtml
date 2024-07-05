@@ -1,0 +1,79 @@
+﻿@using EntityLayer.Concrete
+@model List<Product>
+
+<div class="container-fluid bg-light py-3">
+    <div class="container py-3">
+        <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+            <h2 class="mb-4">Ürünler</h2>
+            <div class="border-bottom"></div>
+        </div>
+
+        <div class="row g-4">
+            @foreach (var item in Model)
+            {
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="card case-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="@item.PImageUrl")" alt="">
+                        <a class="case-overlay text-decoration-none" href="">
+                            <small>@item.Title</small>
+                            <h5 class="lh-base text-white mb-3">
+                                @item.Name
+                            </h5>
+                            <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+
+@* <div class="container-fluid bg-light py-3">
+    <div class="container py-3">
+        <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+
+            <h2 class="mb-4">Ürünler</h2>
+            <div class="border-bottom"></div>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                <div class="card case-item position-relative overflow-hidden rounded mb-2">
+                    <img class="img-fluid" src="~/Vipnet Asansör/img/asansorKarti.png" alt="">
+                    <a class="case-overlay text-decoration-none" href="vpc-edc-01-asansor-kontrol-karti.html">
+                        <small>Asansör Kapı Kontrol Kartları</small>
+                        <h5 class="lh-base text-white mb-3">
+                            VPC-EDC-01 ASANSOR KONTROL KARTI
+                        </h5>
+                        <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                <div class="card case-item position-relative overflow-hidden rounded mb-2">
+                    <img class="img-fluid" src="~/Vipnet Asansör/img/kapi_fotoseli.jpg" alt="">
+                    <a class="case-overlay text-decoration-none" href="kapi-fotoseli.html">
+                        <small>Asansör Kapı Yan Ürünleri</small>
+                        <h5 class="lh-base text-white mb-3">
+                            KAPI FOTOSELİ
+                        </h5>
+                        <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.7s">
+                <div class="card case-item position-relative overflow-hidden rounded mb-2">
+                    <img class="img-fluid" src="~/Vipnet Asansör/img/mono_stabil.jpg" alt="">
+                    <a class="case-overlay text-decoration-none" href="mono-stabil.html">
+                        <small>Asansör Kapı Yan Ürünleri</small>
+                        <h5 class="lh-base text-white mb-3">
+                            MONO STABİL
+                        </h5>
+                        <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ *@

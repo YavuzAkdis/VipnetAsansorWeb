@@ -18,6 +18,10 @@ namespace EntityLayer.Concrete
         public string? Description2 { get; set; }
         public string? ImageUrl { get; set; }
 
+        public string? Name2 { get; set; }
+        public string? Description3 { get; set; }
+
+        public string? Description4 { get; set; }
         // Navigasyon özelliği
         public ICollection<ArgeTranslation> ArgeTranslations { get; set; }
     }

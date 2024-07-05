@@ -8,7 +8,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Hakkımızda - Vipnet Asansör</title>
+    <title>Arge - Vipnet Asansör</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -67,7 +67,7 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
                         <a href="index" class="nav-item nav-link ">Anasayfa</a>
-                        <a href="about" class="nav-item nav-link active">Hakkımızda</a>
+                        <a href="about" class="nav-item nav-link">Hakkımızda</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Ürünler</a>
                             <div class="dropdown-menu bg-light mt-2">
@@ -76,7 +76,7 @@
                                 <a href="mono-stabil.html" class="dropdown-item">Mono Stabil</a>
                             </div>
                         </div>
-                        <a href="arge" class="nav-item nav-link">Arge</a>
+                        <a href="arge" class="nav-item nav-link active">Arge</a>
 
                         <a href="contact" class="nav-item nav-link">İletişim</a>
                     </div>
@@ -88,20 +88,22 @@
     </div>
     <!-- Navbar End -->
     <!-- Hero Start -->
-    <div class="container-fluid pt-5 bg-primary hakkimizda-header">
+    <div class="container-fluid pt-5 bg-primary arge-header">
         <div class="content container pt-5">
             <div class="row g-5 pt-5">
                 <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
-                    <h1 class="display-4 text-white mb-4 animated slideInRight">Hakkımızda</h1>
+                    <h1 class="display-4 text-white mb-4 animated slideInRight">Arge</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center justify-content-lg-start mb-0">
                             <li class="breadcrumb-item"><a class="text-white" href="#">Anasayfa</a></li>
 
-                            <li class="breadcrumb-item text-white active" aria-current="page">Hakkımızda</li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Arge</li>
                         </ol>
                     </nav>
                 </div>
-
+                <div class="col-lg-6 align-self-end text-center text-lg-end">
+                    <img class="img-fluid" src="~/Vipnet Asansör/img/hero-img.png" alt="" style="max-height: 300px;">
+                </div>
             </div>
         </div>
     </div>
@@ -125,25 +127,30 @@
         </div>
     </div>
     <!-- Full Screen Search End -->
-    <!-- About Start -->
-    <div class="container-fluid py-3">
-        <div class="container py-3">
-            @await Component.InvokeAsync("AboutList")
+
+    @await Component.InvokeAsync("ArgeList")
+
+    <!-- Yetenekler -->
+    <div class="container-fluid bg-light mt-3 ">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+
+                @await Component.InvokeAsync("SkillList") 
+
+            </div>
         </div>
     </div>
-    <!-- About End -->
 
-    <div class="container-fluid mb-5 referans-img">
-        <div class="content container ">
+    <div class="container-fluid pt-5 mb-5">
+        <div class="content container pt-5">
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
 
-                <h2 class="mb-4">Referanslar</h2>
+                <h2 class="mb-4">PARTNERLER</h2>
                 <div class="border-bottom"></div>
             </div>
-            @await Component.InvokeAsync("ReferenceList")
+            @await Component.InvokeAsync("PartnerList")
         </div>
     </div>
-
 
     <!-- Footer Start -->
     <div class="container-fluid bg-primary text-white-50 footer">
@@ -224,6 +231,7 @@
 
     <!-- Template Javascript -->
     <script src="~/Vipnet Asansör/js/main.js"></script>
+
     <script>
         $(document).ready(function () {
             $("#owl-carousel").owlCarousel({
@@ -251,7 +259,6 @@
             });
         });
     </script>
-
 </body>
 
 </html>

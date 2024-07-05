@@ -1,0 +1,83 @@
+﻿@using EntityLayer.Concrete
+@model List<Arge>
+
+@foreach(var item in Model)
+{
+    <div class="container-fluid  py-5">
+        <div class="container">
+            <h2 class="mb-4 text-center">@item.Name</h2>
+            <div class="border-bottom"></div>
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="about-img">
+                        <img class="img-fluid" src="@item.ImageUrl">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+
+                    <h1 class="mb-4">@item.Title</h1>
+                    <p class="mb-4">
+                        @item.Description1
+                    </p>
+                    <p class="mb-4">
+                        @item.Description2
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pt-5 mb-5 bg-primary arge-header2">
+        <div class="container pt-5">
+            <div class="row g-5 pt-3">
+                <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
+                    <h3 class=" text-white mb-4 animated slideInRight">@item.Name2</h3>
+                    <p style="font-style: italic;" class="h2 text-white">@item.Description3</p>
+                </div>
+                <div class="col-lg-6 align-self-end text-center text-lg-end">
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@* <div class="container-fluid  py-5">
+    <div class="container">
+        <h2 class="mb-4 text-center">TEKNOLOJİ VE İNOVASYONUN ÖNCÜSÜ</h2>
+        <div class="border-bottom"></div>
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="about-img">
+                    <img class="img-fluid" src="~/Vipnet Asansör/img/arge-sertifikasyon.jpg">
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+
+                <h1 class="mb-4">36 Yıllık Deneyim ve Ar-Ge Liderliği</h1>
+                <p class="mb-4">
+                    VIPNET Asansör; Endüstriyel Elektrik markasıdır. 1988 yılında faaliyete başlayan şirketimiz, 11.000 m2 kapalı olmak üzere toplam 28.000 m2’lik alanda ülkemizin ve dünyanın
+                    ihtiyaç duyduğu alanlarda teknoloji, otomasyon, enerji üretimi ve enerji tasarrufu çözümleri sunmaktadır.
+                </p>
+                <p class="mb-4">
+                    Ar-Ge Merkezimiz 24.05.2018 tarihinde 5746 Sayılı Araştırma ve Geliştirme Faaliyetlerinin Desteklenmesi hakkındaki kanun kapsamında
+                    Sanayi ve Teknoloji Bakanlığı tarafından tescil edilmiştir. Tecrübeli bir Ar-Ge merkezi olarak, 601 m² kapalı alanda, 20’den fazla araştırmacı, tasarımcı, destek personeli ve teknisyen kadrosunu gerek yurt içi gerek yurt dışında bilgi ve deneyim kazanmış uzmanlar ile geliştirerek yüksek nitelikli ve yaratıcı bir güç odağı oluşturmuştur. Elektronik, Otomasyon, Bilgisayar, Yazılım, Makine, Mekatronik, Proses Mühendisliği uzmanlıklarımızı disiplinler arası iş birliğini en üst seviyeye çıkartarak çözümler üretiriz. Endüstriyel uygulamalardaki saha tecrübemiz ve etik mühendislik değerlerimiz, Ar-Ge çalışmalarımızı Maliyet, Performans ve Uygulanabilirlik konusunda gerçekleştirerek tasarım ve uygulama noktasına taşırız.
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid pt-5 mb-5 bg-primary arge-header2">
+    <div class="container pt-5">
+        <div class="row g-5 pt-3">
+            <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
+                <h3 class=" text-white mb-4 animated slideInRight"> </h3>
+                <p style="font-style: italic;" class="h2 text-white">AR-GE bölümümüz, yenilikçi çözümler ve ileri teknoloji geliştirme konularında öncüdür...</p>
+            </div>
+            <div class="col-lg-6 align-self-end text-center text-lg-end">
+            </div>
+        </div>
+    </div>
+</div> *@

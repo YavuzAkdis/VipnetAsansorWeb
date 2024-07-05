@@ -11,44 +11,24 @@ namespace Vipnet_Asansor.Controllers
             return View();
         }
 
-        public PartialViewResult FeaturePartial()
-        {
-            return PartialView();
-        }
-
-        public PartialViewResult HeaderPartial()
-        {
-            return PartialView();
-        }
-
-        public PartialViewResult ProductsPartial()
-        {
-            return PartialView();
-        }
-
-        public PartialViewResult PortfolioPartial()
-        {
-            return PartialView();
-        }
-
-        public PartialViewResult QuestionsPartial()
-        {
-            return PartialView();
-        }
-
-        public PartialViewResult MasterBrandPartial()
-        {
-            return PartialView();
-        }
-
-        public PartialViewResult BrandPartial()
-        {
-            return PartialView();
-        }
 
         /* Hakkımızda Yapısı  */
 
         public IActionResult About()
+        {
+            return View();
+        }
+
+        /* Arge Yapısı  */
+
+        public IActionResult Arge()
+        {
+            return View();
+        }
+
+        /* İletişim Yapısı  */
+
+        public IActionResult Contact()
         {
             return View();
         }

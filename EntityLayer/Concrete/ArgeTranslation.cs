@@ -22,6 +22,11 @@ namespace EntityLayer.Concrete
        
         public string? TranslatedDescription2 { get; set; }
         public string? TranslatedImageUrl { get; set; }
+
+        public string? TranslatedName2 { get; set; }
+        public string? TranslatedDescription3 { get; set; }
+
+        public string? TranslatedDescription4 { get; set; }
         // Navigasyon özelliği
         public Arge? Arge { get; set; }
     }

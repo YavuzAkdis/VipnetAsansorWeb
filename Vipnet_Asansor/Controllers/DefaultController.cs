@@ -1,4 +1,6 @@
-﻿using EntityLayer.Concrete;
+﻿using BusinessLayer.Concrete;
+using DataAccessLayer.EntityFramework;
+using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Vipnet_Asansor.Controllers
@@ -33,5 +35,20 @@ namespace Vipnet_Asansor.Controllers
             return View();
         }
 
+        /* Mesaj Kutusu*/
+        [HttpGet]
+        public PartialViewResult Message()
+        {
+            return PartialView();
+        }
+        [HttpPost]
+        public PartialViewResult Message(Message p)
+        {
+            MessageManager messageManager = new MessageManager(new EfMessageDal());
+            p.Date = Convert.ToDateTime(DateTime.Now.ToShortDateString()); // Mesaj atıldığı tarih
+            p.Status = true; // Mesaj okunma durumu
+            messageManager.TAdd(p);
+            return PartialView();
+        }
     }
 }

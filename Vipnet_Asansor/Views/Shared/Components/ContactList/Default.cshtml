@@ -1,0 +1,48 @@
+﻿@using EntityLayer.Concrete
+@model List<Contact>
+
+
+<div class="col-md-6  wow fadeIn" data-wow-delay="0.5s">
+    <div class="contact-info row justify-content-center  ">
+
+        @foreach (var item in Model)
+        {
+            <div class="info-item text-dark">
+                
+                @item.Title
+            </div>
+            <div class="info-item ">
+                <a class="text-dark" href="tel:@item.Phone"> <i class="fa fa-phone pe-2" aria-hidden="true"></i> @item.Phone</a>
+            </div>
+
+
+            <div class="info-item ">
+                <a class="text-dark" href="mailto:@item.Mail"><i class="fa fa-envelope pe-2" aria-hidden="true"></i> @item.Mail</a>
+            </div>
+
+
+            <div class="info-item text-dark">
+                <i class="bi bi-geo-alt-fill"></i>
+                @item.Address
+            </div>
+        }
+    </div>
+</div>
+<div class="container map mb-5">
+    @foreach (var item in Model)
+    {
+        <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+            <h4 class="my-4 text-dark">GOOGLE MAPS</h4>
+            <div class="border-bottom"></div>
+            <h2 class="my-4 text-dark">@item.Description</h2>
+        </div>
+        <div class="row">
+
+            <iframe src="@item.Maps"width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+    }
+  
+</div>
+
+

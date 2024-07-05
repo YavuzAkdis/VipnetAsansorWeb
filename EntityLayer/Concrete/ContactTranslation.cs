@@ -13,9 +13,11 @@ namespace EntityLayer.Concrete
         public int ContactTranslationID { get; set; }
         public int ContactID { get; set; }
         public string? Language { get; set; }
+        public string? TranslatedTitle { get; set; }
         public string? TranslatedPhone { get; set; }
         public string? TranslatedMail { get; set; }
         public string? TranslatedAddress { get; set; }
+        public string? TranslatedDescription { get; set; }
         public string? TranslatedMaps { get; set; }
 
         // Navigasyon özelliği

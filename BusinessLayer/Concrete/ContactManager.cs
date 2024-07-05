@@ -12,6 +12,12 @@ namespace BusinessLayer.Concrete
     public class ContactManager : IContactService
     {
         IContactDal _contactDal;
+
+        public ContactManager(IContactDal contactDal)
+        {
+            _contactDal = contactDal;
+        }
+
         public Contact GetById(int id)
         {
            return _contactDal.GetById(id);

@@ -1,0 +1,50 @@
+﻿@* AnaMarkamız Güncelleme Sayfası Tasarımı *@
+
+@model EntityLayer.Concrete.MasterBrand
+@{
+    ViewData["Title"] = "EditMasterBrand";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<div class="card-header border-0">
+    <h3 class="mb-0">AnaMarkamız Düzenleme Sayfası</h3>
+</div>
+<br />
+
+
+<form asp-action="EditMasterBrand" method="post">
+    <input type="hidden" asp-for="MasterBrandID" />
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Title" class="control-label"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Description" class="control-label"></label>
+        <input asp-for="Description" class="form-control" />
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ImageUrl" class="control-label"></label>
+        <textarea asp-for="ImageUrl" class="form-control"></textarea>
+        <span asp-validation-for="ImageUrl" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Url" class="control-label"></label>
+        <input asp-for="Url" class="form-control" />
+        <span asp-validation-for="Url" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Kaydet" class="btn btn-primary" />
+    </div>
+</form>
+

@@ -21,7 +21,7 @@ namespace EntityLayer.Concrete
         public string? P4 { get; set; }
 
         // Navigasyon özelliği
-        public ICollection<HeaderTranslation> HeaderTranslations { get; set; }
+        public ICollection<HeaderTranslation>? HeaderTranslations { get; set; }
     }
 
 }

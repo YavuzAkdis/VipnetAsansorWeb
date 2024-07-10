@@ -10,6 +10,7 @@ namespace DataAccessLayer.Concrete
 {
     public class Context:DbContext // Veri Bağlantısını Tutan Sınıf
     {
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("server=DESKTOP-SRUKDV2;database=VipnetAsansorDb;integrated security=true;TrustServerCertificate=true");

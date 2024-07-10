@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    public class _ArgeManager : IArgeService
+    public class ArgeManager : IArgeService
     {
         IArgeDal _argeDal;
 
-        public _ArgeManager(IArgeDal argeDal)
+        public ArgeManager(IArgeDal argeDal)
         {
             _argeDal = argeDal;
         }

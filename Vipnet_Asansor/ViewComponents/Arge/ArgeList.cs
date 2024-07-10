@@ -6,7 +6,7 @@ namespace Vipnet_Asansor.ViewComponents.Arge
 {
     public class ArgeList : ViewComponent
     {
-        _ArgeManager argeManager = new _ArgeManager(new EfArgeDal());
+        ArgeManager argeManager = new ArgeManager(new EfArgeDal());
         public IViewComponentResult Invoke()
         {
             var values = argeManager.TGetList();

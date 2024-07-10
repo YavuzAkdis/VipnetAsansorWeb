@@ -1,0 +1,86 @@
+﻿
+
+
+@* Arge Listeleme Sayfası Tasarımı *@
+
+@using EntityLayer.Concrete
+@model List<Arge>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="card-header border-0">
+    <h3 class="mb-0">Arge Sayfası</h3>
+</div>
+<!-- Light table -->
+<div class="table-responsive">
+    <table class="table align-items-center table-flush">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col" class="sort" data-sort="name">#</th>
+       
+                <th scope="col" class="sort" data-sort="status">Title</th>
+                <th scope="col" class="sort" data-sort="budget">Name</th>
+                <th scope="col" class="sort" data-sort="status">Description1</th>
+                <th scope="col" class="sort" data-sort="status">Description2</th>
+                <th scope="col" class="sort" data-sort="completion">ImageUrl</th>
+                <th scope="col" class="sort" data-sort="status">Description3</th>
+                <th scope="col" class="sort" data-sort="status">Description4</th>
+                <th scope="col" class="sort" data-sort="budget">Name2</th>
+
+                <th scope="col">Sil</th>
+                <th scope="col">Düzenle</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody class="list">
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.ArgeID
+                    </td>
+                    <td>
+                        @item.Title
+                    </td>
+                    <td>
+                        @item.Name
+                    </td>
+                    <td>
+                        @item.Description1
+                    </td>
+                    <td>
+                        @item.Description2
+                    </td>
+                    <td>
+                        @item.ImageUrl
+                    </td>
+                    <td>
+                        @item.Description3
+                    </td>
+                    <td>
+                        @item.Description4
+                    </td>
+                    <td>
+                        @item.Name2
+                    </td>
+                    <td>
+                        <a href="/Arge/DeleteArge/@item.ArgeID" class="btn btn-danger">Sil</a>
+                    </td>
+                    <td>
+                        <a href="/Arge/EditArge/@item.ArgeID" class="btn btn-warning">Düzenle</a>
+                    </td>
+                </tr>
+            }
+
+
+        </tbody>
+    </table>
+
+    <a href="/Arge/AddArge" class="btn btn-primary">Yeni Arge Sayfası Ekle </a>
+</div>
+

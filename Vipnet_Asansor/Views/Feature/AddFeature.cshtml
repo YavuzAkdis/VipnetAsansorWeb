@@ -1,0 +1,38 @@
+﻿@* Feature Ekleme Sayfası Tasarımı *@
+
+@model EntityLayer.Concrete.Feature
+
+@{
+    ViewData["Title"] = "AddFeature";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Feature Ekleme</h1>
+<br />
+<br />
+<form asp-action="AddFeature" method="post">
+
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Title" class="control-label"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Desciption" class="control-label"></label>
+        <textarea asp-for="Desciption" class="form-control"></textarea>
+        <span asp-validation-for="Desciption" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="VideoUrl" class="control-label"></label>
+        <textarea asp-for="VideoUrl" class="form-control"></textarea>
+        <span asp-validation-for="VideoUrl" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Kaydet" class="btn btn-primary" />
+    </div>
+</form>

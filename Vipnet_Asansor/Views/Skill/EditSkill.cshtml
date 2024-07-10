@@ -1,0 +1,38 @@
+﻿@* Yetenek Güncelleme Sayfası Tasarımı *@
+
+@model EntityLayer.Concrete.Skill
+@{
+    ViewData["Title"] = "EditSkill";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="card-header border-0">
+    <h3 class="mb-0">Yetenek Düzenleme Sayfası</h3>
+</div>
+
+
+<form asp-action="EditSkill" method="post">
+    <input type="hidden" asp-for="SkillID" /> 
+    <div class="form-group">
+        <label asp-for="Icon" class="control-label"></label>
+        <input asp-for="Icon" class="form-control" />
+        <span asp-validation-for="Icon" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Title" class="control-label"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Description" class="control-label"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Kaydet" class="btn btn-primary" />
+    </div>
+</form>
+

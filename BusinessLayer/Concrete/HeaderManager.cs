@@ -40,7 +40,7 @@ namespace BusinessLayer.Concrete
 
         public void TUpdate(Header t)
         {
-           _headerDal.Update(t);    
+            _headerDal.Update(t);  
         }
     }
 }

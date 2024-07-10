@@ -190,11 +190,8 @@
                     <p><i class="fa fa-phone-alt me-3"></i>+90 332 239 09 00</p>
                     <p><i class="fa fa-envelope me-3"></i>info@vipnetasansor.com</p>
                     <div class="d-flex pt-2">
-
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                      
+                        @await Component.InvokeAsync("SocialMediaList")
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
@@ -210,7 +207,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; 2024 Vipnet Asansör Tüm Hakları Saklıdır.
+                        &copy;  @DateTime.Now.Year. Vipnet Asansör Tüm Hakları Saklıdır.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <!-- Buraya diğer içeriklerinizi ekleyebilirsiniz -->

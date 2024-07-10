@@ -735,6 +735,15 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("PImageUrl")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("PdfFileImage")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PdfFileName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PdfFileUrl")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Title")
                         .HasColumnType("nvarchar(max)");
 
@@ -948,8 +957,8 @@ namespace DataAccessLayer.Migrations
                     b.Property<bool?>("Status")
                         .HasColumnType("bit");
 
-                    b.Property<int?>("Url")
-                        .HasColumnType("int");
+                    b.Property<string>("Url")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("SocialMediaID");
 

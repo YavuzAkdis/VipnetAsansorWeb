@@ -15,7 +15,9 @@ namespace EntityLayer.Concrete
         public string? Name { get; set; }
         public string? Title { get; set; }
         public string? Desciption { get; set; }
-
+        public string? PdfFileName { get; set; }
+        public string? PdfFileImage { get; set; }
+        public string? PdfFileUrl { get; set; }// PDF dosyasının adını saklamak için özellik
         public string? PImageUrl { get; set; }
         public bool? IsApproved { get; set; }
         public bool? IsHome { get; set; }

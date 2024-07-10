@@ -1,0 +1,54 @@
+﻿
+
+@* İletişim Ekleme Sayfası Tasarımı *@
+
+@model EntityLayer.Concrete.Contact
+
+@{
+    ViewData["Title"] = "AddContact";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<h1>İletşim Bilgisi Ekleme</h1>
+<br />
+<br />
+<form asp-action="AddContact" method="post">
+    <div class="form-group">
+        <label asp-for="Phone" class="control-label"></label>
+        <input asp-for="Phone" class="form-control" />
+        <span asp-validation-for="Phone" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Title" class="control-label"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+  
+
+    <div class="form-group">
+        <label asp-for="Mail" class="control-label"></label>
+        <textarea asp-for="Mail" class="form-control"></textarea>
+        <span asp-validation-for="Mail" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Address" class="control-label"></label>
+        <textarea asp-for="Address" class="form-control"></textarea>
+        <span asp-validation-for="Address" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Description" class="control-label"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Maps" class="control-label"></label>
+        <textarea asp-for="Maps" class="form-control"></textarea>
+        <span asp-validation-for="Maps" class="text-danger"></span>
+    </div>
+    
+    <div class="form-group">
+        <input type="submit" value="Kaydet" class="btn btn-primary" />
+    </div>
+</form>

@@ -1,0 +1,73 @@
+﻿
+
+
+
+@* S.S.S Listeleme Sayfası Tasarımı *@
+
+
+@using EntityLayer.Concrete
+@model List<Topbar>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<div class="card-header border-0">
+    <h3 class="mb-0">Topbar Tablosu</h3>
+</div>
+<!-- Light table -->
+<div class="table-responsive">
+    <table class="table align-items-center table-flush">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col" class="sort" data-sort="name">#</th>
+                <th scope="col" class="sort" data-sort="budget">LogoUrl</th>
+
+                <th scope="col" class="sort" data-sort="completion">Email</th>
+                <th scope="col" class="sort" data-sort="completion">PhoneNumber</th>
+                <th scope="col" class="sort" data-sort="completion">LinkUrl</th>
+                <th scope="col">Sil</th>
+                <th scope="col">Düzenle</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody class="list">
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.TopbarID
+                    </td>
+                    <td>
+                        @item.LogoUrl
+                    </td>
+                    <td>
+                        @item.Email
+                    </td>
+
+                    <td>
+                        @item.PhoneNumber
+                    </td>
+
+                    <td>
+                        @item.LinkUrl
+                    </td>
+                    <td>
+                        <a href="/Topbar/DeleteTopbar/@item.TopbarID" class="btn btn-danger">Sil</a>
+                    </td>
+                    <td>
+                        <a href="/Topbar/EditTopbar/@item.TopbarID" class="btn btn-warning">Düzenle</a>
+                    </td>
+                </tr>
+            }
+
+
+        </tbody>
+    </table>
+
+    <a href="/Topbar/AddTopbar" class="btn btn-primary">Yeni Topbar Ekle </a>
+</div>

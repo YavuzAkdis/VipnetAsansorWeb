@@ -1,0 +1,29 @@
+﻿@* Reference Ekleme Sayfası Tasarımı *@
+
+@model EntityLayer.Concrete.Reference
+@{
+    ViewData["Title"] = "AddReference";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<h1>Reference Ekleme</h1>
+<br />
+<br />
+<form asp-action="AddReference" method="post">
+
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+   
+    <div class="form-group">
+        <label asp-for="ImageUrl" class="control-label"></label>
+        <textarea asp-for="ImageUrl" class="form-control"></textarea>
+        <span asp-validation-for="ImageUrl" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Kaydet" class="btn btn-primary" />
+    </div>
+</form>

@@ -1,4 +1,7 @@
-﻿@using EntityLayer.Concrete
+﻿
+@* ANASAYFA DA FEATURE TASARIMI *@
+
+@using EntityLayer.Concrete
 @model List<Feature>
 
 <div class="container-fluid bg-primary hero-header mb-3">
@@ -14,15 +17,15 @@
                             <div class="col-lg-6 align-self-center text-center text-lg-start">
                                 <h2 class="display-4 text-white mb-4 animated slideInRight">@feature.Name</h2>
                                 <p class="text-white mb-4 animated slideInRight">@feature.Desciption</p>
-                                <a href="iletisim.html" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">İLETİŞİM</a>
+                                <a href="/Default/contact" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">İLETİŞİM</a>
                             </div>
                             <div class="col-lg-6 align-self-end text-center text-lg-end">
                                 <div class="video-container">
-                                    <video style="width: -webkit-fill-available;" src="@feature.VideoUrl" playsinline autoplay muted loop>
+                                    <video style="width: -webkit-fill-available;" src="~/video/@feature.VideoUrl" playsinline autoplay muted loop>
                                         Tarayıcınız video etiketini desteklemiyor.
                                     </video>
                                 </div>
-                            </div>
+                            </div>  
                         </div>
                     </div>
                 }
@@ -43,76 +46,3 @@
     </div>
 </div>
 
-@* 
-<div class="container-fluid bg-primary hero-header mb-3">
-
-    <div class="content container pt-5">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
-            <div class="carousel-inner  ">
-
-                <div class="carousel-item active">
-                    <div class="row ">
-                        <div class="col-lg-6 align-self-center text-center text-lg-start ">
-                            <h2 class="display-4 text-white mb-4 animated slideInRight">VPC-EDC-01 ASANSOR KONTROL KARTI</h2>
-                            <p class="text-white mb-4 animated slideInRight">Sürdürülebilir geleceği hazırlamaya ve hayallere hayat vermeye devam ediyoruz.</p>
-                            <a href="iletisim.html" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">İLETİŞİM</a>
-                        </div>
-                        <div class="col-lg-6 align-self-end text-center text-lg-end ">
-                            <div class="video-container">
-                                <video style="width: -webkit-fill-available ;" src="~/Vipnet Asansör/img/asansorKarti.mp4" playsinline autoplay muted loop>
-                                    Tarayıcınız video etiketini desteklemiyor.
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row ">
-                        <div class="col-lg-6 align-self-center text-center text-lg-start ">
-                            <h2 class="display-4 text-white mb-4 animated slideInRight">ASANSOR KAPI FOTOSELİ</h2>
-                            <p class="text-white mb-4 animated slideInRight">Sürdürülebilir geleceği hazırlamaya ve hayallere hayat vermeye devam ediyoruz.</p>
-                            <a href="" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">İLETİŞİM</a>
-                        </div>
-                        <div class="col-lg-6 align-self-end text-center text-lg-end">
-                            <div class="video-container">
-                                <video src="~/Vipnet Asansör/img/kapiFotoseli.mp4" playsinline autoplay muted loop>
-                                    Tarayıcınız video etiketini desteklemiyor.
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row ">
-                        <div class="col-lg-6 align-self-center text-center text-lg-start">
-                            <h2 class="display-4 text-white mb-4 animated slideInRight">MONO STABİL</h2>
-                            <p class="text-white mb-4 animated slideInRight">Sürdürülebilir geleceği hazırlamaya ve hayallere hayat vermeye devam ediyoruz.</p>
-                            <a href="" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">İLETİŞİM</a>
-                        </div>
-                        <div class="col-lg-6 align-self-end text-center text-lg-end">
-                            <div class="video-container">
-                                <video src="~/Vipnet Asansör/img/monoStabil.mp4" playsinline autoplay muted loop>
-                                    Tarayıcınız video etiketini desteklemiyor.
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-controls">
-                <a class="btn btn-outline-primary btn-square me-3 " href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
-                        <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
-                    </svg>
-
-                </a>
-                <a class="btn btn-outline-primary btn-square " href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
-                    </svg>
-
-                </a>
-            </div>
-        </div>
-    </div>
-</div> *@

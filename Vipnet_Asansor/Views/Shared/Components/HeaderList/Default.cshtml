@@ -1,4 +1,7 @@
-﻿@using EntityLayer.Concrete
+﻿@* ANASAYFA DA HEADER TASARIMI *@
+
+
+@using EntityLayer.Concrete
 @model List<Header>
 
 
@@ -10,7 +13,7 @@
             {
                  <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                 <div class="about-img">
-                    <img class="img-fluid" src="@item.ImageUrl">
+                        <img src="~/img/@item.ImageUrl" alt="Header Image" />
                 </div>
             </div>
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">

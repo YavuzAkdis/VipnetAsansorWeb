@@ -9,6 +9,13 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
+<style>
+    .fixed-table th, .fixed-table td {
+        word-wrap: break-word; /* Uzun kelimeleri bölerek satır atlamasını sağlar */
+        white-space: normal; /* Metnin birden fazla satıra yayılmasını sağlar */
+        max-width: 300px; /* Description hücresinin maksimum genişliği */
+    }
+</style>
 
 
 <div class="card-header border-0">
@@ -16,7 +23,7 @@
 </div>
 <!-- Light table -->
 <div class="table-responsive">
-    <table class="table align-items-center table-flush">
+    <table class="table align-items-center table-flush fixed-table">
         <thead class="thead-light">
             <tr>
                 <th scope="col" class="sort" data-sort="name">#</th>
@@ -48,8 +55,9 @@
                         @item.Desciption
                     </td>
                     <td>
-                        @item.VideoUrl
+                        <img src="/video/@item.VideoUrl" width="100" height="100" alt="video" />
                     </td>
+                    
                     <td>
                         <a href="/Feature/DeleteFeature/@item.FeatureID" class="btn btn-danger">Sil</a>
                     </td>

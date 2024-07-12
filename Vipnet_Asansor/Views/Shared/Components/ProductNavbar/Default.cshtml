@@ -1,0 +1,13 @@
+﻿
+
+@* NAVBAR DA ÜRÜNLERİN LİSTELENME TASARIMI *@
+
+
+@model IEnumerable<EntityLayer.Concrete.Product>
+
+
+    @foreach (var product in Model)
+    {
+        <a href="/Product/Details/@product.ProductId" class="dropdown-item">@product.Name</a>
+    }
+

@@ -16,28 +16,30 @@
 <br />
 
 
-<form asp-action="EditPartner" method="post">
+<form asp-action="EditPartner" method="post" enctype="multipart/form-data">
     <input type="hidden" asp-for="PartnerID" />
+
+
     <div class="form-group">
         <label asp-for="Name" class="control-label"></label>
         <input asp-for="Name" class="form-control" />
         <span asp-validation-for="Name" class="text-danger"></span>
     </div>
-
     <div class="form-group">
         <label asp-for="Url" class="control-label"></label>
         <input asp-for="Url" class="form-control" />
         <span asp-validation-for="Url" class="text-danger"></span>
     </div>
-
     <div class="form-group">
-        <label asp-for="ImageUrl" class="control-label"></label>
-        <textarea asp-for="ImageUrl" class="form-control"></textarea>
-        <span asp-validation-for="ImageUrl" class="text-danger"></span>
+        <label asp-for="Image_File" class="control-label"></label>
+        <img src="/img/@Model.ImageUrl" width="100" height="100" alt="Image" />
+        <input type="file" asp-for="Image_File" class="form-control">
+        <span asp-validation-for="Image_File" class="text-danger"></span>
     </div>
 
     <div class="form-group">
         <input type="submit" value="Kaydet" class="btn btn-primary" />
     </div>
 </form>
+
 

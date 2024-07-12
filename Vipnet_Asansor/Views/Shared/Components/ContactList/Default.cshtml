@@ -1,7 +1,10 @@
-﻿@using EntityLayer.Concrete
+﻿@* İLETİŞİM SAYFASINDA İLETİŞİM PARTİAL TASARIMI *@
+
+
+@using EntityLayer.Concrete
 @model List<Contact>
 
-
+@* İLETŞİM *@
 <div class="col-md-6  wow fadeIn" data-wow-delay="0.5s">
     <div class="contact-info row justify-content-center  ">
 
@@ -28,6 +31,8 @@
         }
     </div>
 </div>
+
+@* GOOGLE HARİTA *@
 <div class="container map mb-5">
     @foreach (var item in Model)
     {

@@ -1,16 +1,13 @@
-﻿@using EntityLayer.Concrete
+﻿
+@* ARGE SAYFASINDA PARTNERLER TASARIMI *@
+@using EntityLayer.Concrete
 @model List<Partner>
 
-
-
 <div id="owl-carousel" class="owl-carousel owl-theme">
-
     @foreach (var item in Model)
     {
         <div class="item">
-            <img src="@item.ImageUrl" alt="" />
+            <img src="~/img/@item.ImageUrl" alt="Partner Image" />
         </div>
     }
-
-
 </div>

@@ -8,13 +8,20 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
+<style>
+    .fixed-table th, .fixed-table td {
+        word-wrap: break-word; /* Uzun kelimeleri bölerek satır atlamasını sağlar */
+        white-space: normal; /* Metnin birden fazla satıra yayılmasını sağlar */
+        max-width: 300px; /* Description hücresinin maksimum genişliği */
+    }
+</style>
 
 <div class="card-header border-0">
     <h3 class="mb-0">Portfolio Tablosu</h3>
 </div>
 <!-- Light table -->
 <div class="table-responsive">
-    <table class="table align-items-center table-flush">
+    <table class="table align-items-center table-flush fixed-table">
         <thead class="thead-light">
             <tr>
                 <th scope="col" class="sort" data-sort="name">#</th>

@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "77CVWWQIYESndIxTQ3AD2EMv7QybUpLgf48zSPZnTDi4Gj5gMd5DWGNBxMo1S23LTKnaregI4f31HEnx+WdkfA==",
+  "dgSpecHash": "in+mP557PzVH4YjDBWun4/RbYKMJy12VZOvE3EmbfFXRlpNMGVNQD9Lbgq+a6Z+f4GQ5ev66exsKZo+pm5t4Xg==",
   "success": true,
   "projectFilePath": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\EntityLayer\\EntityLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.codeanalysis.common\\4.5.0\\microsoft.codeanalysis.common.4.5.0.nupkg.sha512",

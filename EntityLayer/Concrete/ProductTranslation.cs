@@ -14,13 +14,19 @@ namespace EntityLayer.Concrete
         public int ProductID { get; set; }
         public string? Language { get; set; }
         public string? TranslatedName { get; set; }
-        public string? TranslatedDescription { get; set; }
-
+ 
         public string? TranslatedUrl { get; set; }
        
         public string? TranslatedTitle { get; set; }
-       
+        public string? TranslatedDescription { get; set; }
+        public string? TranslatedDescription2 { get; set; }
+        public string? TranslatedDescription3 { get; set; }
+        public string? TranslatedDescription4 { get; set; }
 
+        public string? TranslatedPdfFileName { get; set; }
+        public string? TranslatedPdfFileImage { get; set; }
+        public string? TranslatedPdfFileUrl { get; set; }// PDF dosyasının adını saklamak için özellik
+        public string? TranslatedPImageUrl { get; set; }
         public string? TranslatedImageUrl { get; set; }
         public bool? TranslatedIsApproved { get; set; }
         public bool? TranslatedIsHome { get; set; }
@@ -29,3 +35,4 @@ namespace EntityLayer.Concrete
     }
 
 }
+

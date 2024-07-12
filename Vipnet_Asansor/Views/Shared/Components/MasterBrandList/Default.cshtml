@@ -1,11 +1,14 @@
-﻿@using EntityLayer.Concrete
+﻿@* ANASAYFA DA ANA MARKA TASARIMI *@
+
+
+@using EntityLayer.Concrete
 @model List<MasterBrand>
 
 @foreach (var item in Model)
 {
 
     <div class="d-flex align-items-center mb-3">
-        <img class="img-fluid flex-shrink-0 " src="@item.ImageUrl">
+        <img src="~/img/@item.ImageUrl" alt="MasterBrand Image" />
 
     </div>
     <h2 class="mb-4">@item.Name</h2>
@@ -16,19 +19,5 @@
 }
 
 
-@* <div class="d-flex align-items-center mb-3">
-    <img class="img-fluid flex-shrink-0 " src="~/Vipnet Asansör/img/Endustriyel-Logo2.png">
 
-</div>
-<h2 class="mb-4">Vipnet Asansör Bir Endüstriyel Elektrik Markasıdır.</h2>
-<p class="mb-4">
-    Sektörde uzun
-    yıllara dayanan deneyimi ve teknolojiyle harmanlanmış
-    bir vizyonu birleştirerek asansör elektronik ürünleri
-    markasıdır. Yenilikçi yaklaşımı ve müşteri odaklı
-    kalitesiyle, sektöründe öncü olmayı hedefleyen VIPNET
-    Asansör, endüstriyel tesislerden konutlara kadar geniş
-    bir yelpazedeki ihtiyaçlara çözüm sunmaktadır.
-</p>
- *@
 

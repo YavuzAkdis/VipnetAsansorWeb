@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +17,9 @@ namespace EntityLayer.Concrete
         public string? Title { get; set; }
         public string? Desciption { get; set; }
         public string? VideoUrl { get; set; }
+
+        [NotMapped]
+        public IFormFile Video_File { get; set; }
 
         // Navigasyon özelliği
         public ICollection<FeatureTranslation>? FeatureTranslations { get; set; }

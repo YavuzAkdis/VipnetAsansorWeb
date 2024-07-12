@@ -1,4 +1,7 @@
-﻿@using EntityLayer.Concrete
+﻿@* ANASAYFA DA MARKALARIMIZ PARTİAL TASARIMI *@
+
+
+@using EntityLayer.Concrete
 @model List<Brand>
 
 
@@ -8,7 +11,7 @@
         <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
         <a href="@item.Url" target="_blank">
             <div class="d-flex align-items-center mb-3">
-                <img class="img-fluid flex-shrink-0 " src="@item.ImageUrl">
+                <img src="~/img/@item.ImageUrl" alt="Brand Image" />
 
             </div>
         </a>
@@ -18,49 +21,3 @@
     </div>
 }
 
-@* 
-<div class="testimonial-item ps-5">
-    <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-    <a href="https://endustriyel.com/" target="_blank">
-        <div class="d-flex align-items-center mb-3">
-            <img class="img-fluid flex-shrink-0 " src="~/Vipnet Asansör/img/Endustriyel-Logo2.png">
-
-        </div>
-    </a>
-    <h5 class="mb-1">Endüstriyel Elektrik</h5>
-    <p class="fs-5">1988 yılında faaliyete başlayan şirketimiz, şu an, 11.000 m² kapalı olmak üzere toplam 28.000 m2’lik alanda 230 uzman personeli ile ülkemizin ve dünyanın ihtiyaç duyduğu alanlarda teknoloji, otomasyon enerji üretimi ve tasarrufu çözümleri sunmaktadır.</p>
-
-</div>
-<div class="testimonial-item ps-5">
-    <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-    <a href="https://daxlerenergy.com/" target="_blank">
-        <div class="d-flex align-items-center mb-3">
-            <img class="img-fluid flex-shrink-0 " src="~/Vipnet Asansör/img/daxler.png">
-
-        </div>
-    </a>
-    <h5 class="mb-1">Daxler Enerji</h5>
-    <p class="fs-5">Daxler Enerji Endüstriyel Elektrik Girişimi Olup Yenilikçi Güneş Paneli Üretimi Yapan Güneş Enerjisi Ekipmanları Ve Güneş Enerjisi Çözümleri Sunan Bir Teknoloji Şirketidir.</p>
-</div>
-<div class="testimonial-item ps-5">
-    <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-    <a href="https://www.vipnetelectronic.com/" target="_blank">
-        <div class="d-flex align-items-center mb-3">
-            <img class="img-fluid flex-shrink-0 " src="~/Vipnet Asansör/img/vip_Elektronik.png">
-
-        </div>
-    </a>
-    <h5 class="mb-1">Vipnet Elektronik</h5>
-    <p class="fs-5">Vipnet Elektronik geniş bir ürün yelpazesi ile elektrik ve otomasyon malzemlerinin üretiminde öncülük eden bir firmadır.</p>
-</div>
-<div class="testimonial-item ps-5">
-    <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-    <a href="https://vipnetsolar.com.tr/" target="_blank">
-        <div class="d-flex align-items-center mb-3">
-            <img class="img-fluid flex-shrink-0 " src="~/Vipnet Asansör/img/vipnet-Solar.png">
-
-        </div>
-    </a>
-    <h5 class="mb-1">Vipnet Solar</h5>
-    <p class="fs-5">Vipnet Solar yerli güneş paneli üretiminde önde gelen firmalardandır.</p>
-</div> *@

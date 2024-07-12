@@ -7,6 +7,7 @@ namespace Vipnet_Asansor.Controllers
 {
     public class PartnerController : Controller
     {
+
         PartnerManager partnerManager = new PartnerManager(new EfPartnerDal());
 
         public IActionResult Index()
@@ -25,18 +26,61 @@ namespace Vipnet_Asansor.Controllers
 
             return View();
         }
+        //[HttpPost]
+        //public IActionResult AddPartner(Partner partner)
+        //{
+        //    partnerManager.TAdd(partner);
+        //    return RedirectToAction("Index");
+        //}
         [HttpPost]
-        public IActionResult AddPartner(Partner partner)
+        public IActionResult AddPartner(Partner partner,IFormFile Image_File)
         {
+            if (Image_File != null)
+            {
+                // Dosya uzantısını al
+                var uzanti = Path.GetExtension(Image_File.FileName);
+
+                // Orijinal dosya adını al
+                var orijinalDosyaAdi = Path.GetFileNameWithoutExtension(Image_File.FileName);
+
+                // Benzersiz bir dosya adı oluşturmak için zaman damgası ekle
+                var zamanDamgasi = DateTime.Now.ToString("HHmmss");
+                var yeniisim = $"{orijinalDosyaAdi}_{zamanDamgasi}{uzanti}";
+
+                // Dosyanın kaydedileceği yolu oluştur
+                string yol = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img", yeniisim);
+
+                // Dosyayı belirtilen yola kaydet
+                using (var stream = new FileStream(yol, FileMode.Create))
+                {
+                    Image_File.CopyTo(stream);
+                }
+
+                // Dosya adını modele atayın
+                partner.ImageUrl = yeniisim;
+            }
+
+
+
+
             partnerManager.TAdd(partner);
             return RedirectToAction("Index");
         }
+
 
         // Partner Sil
         public IActionResult DeletePartner(int id)
         {
             var values = partnerManager.GetById(id);
-            partnerManager.TDelete(values);
+            if (values != null)
+            {
+                var imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/", values.ImageUrl);
+                if (System.IO.File.Exists(imagePath))
+                {
+                    System.IO.File.Delete(imagePath);
+                }
+                partnerManager.TDelete(values);
+            }
             return RedirectToAction("Index");
         }
 
@@ -49,8 +93,36 @@ namespace Vipnet_Asansor.Controllers
             return View(values);
         }
         [HttpPost]
-        public IActionResult EditPartner(Partner partner)
+        public IActionResult EditPartner(Partner partner, IFormFile Image_File)
         {
+            if (Image_File != null)
+            {
+                // Dosya uzantısını al
+                var uzanti = Path.GetExtension(Image_File.FileName);
+
+                // Orijinal dosya adını al
+                var orijinalDosyaAdi = Path.GetFileNameWithoutExtension(Image_File.FileName);
+
+                // Benzersiz bir dosya adı oluşturmak için zaman damgası ekle
+                var zamanDamgasi = DateTime.Now.ToString("HHmmss");
+                var yeniisim = $"{orijinalDosyaAdi}_{zamanDamgasi}{uzanti}";
+
+                // Dosyanın kaydedileceği yolu oluştur
+                string yol = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img", yeniisim);
+
+                // Dosyayı belirtilen yola kaydet
+                using (var stream = new FileStream(yol, FileMode.Create))
+                {
+                    Image_File.CopyTo(stream);
+                }
+
+                // Dosya adını modele atayın
+                partner.ImageUrl = yeniisim;
+            }
+
+
+
+
             ViewBag.d1 = "Partner Güncelleme";
             if (ModelState.IsValid)
             {

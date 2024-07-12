@@ -1,0 +1,132 @@
+﻿@* ÜRÜN Listeleme Sayfası Tasarımı *@
+
+@using EntityLayer.Concrete
+@model List<Product>
+
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<div class="card-header border-0">
+    <h3 class="mb-0">Ürün Tablosu</h3>
+</div>
+<!-- Light table -->
+<div class="table-responsive">
+    <table class="table align-items-center table-flush">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col" class="sort" data-sort="name">#</th>
+                <th scope="col" class="sort" data-sort="budget">Url</th>
+                <th scope="col" class="sort" data-sort="budget">Name</th>
+                <th scope="col" class="sort" data-sort="status">Title</th>
+                <th scope="col" class="sort" data-sort="completion">Desciption</th>
+                <th scope="col" class="sort" data-sort="completion">Desciption2</th>
+                <th scope="col" class="sort" data-sort="completion">Desciption3</th>
+                <th scope="col" class="sort" data-sort="completion">Desciption4</th>
+                <th scope="col" class="sort" data-sort="completion">PImageUrl</th>
+                <th scope="col" class="sort" data-sort="completion">PImageUrl2</th>
+                <th scope="col" class="sort" data-sort="completion">PImageUrl3</th>
+                <th scope="col" class="sort" data-sort="completion">PdfFileImage</th>
+                <th scope="col" class="sort" data-sort="completion">PdfFileName</th>
+                <th scope="col" class="sort" data-sort="completion">PdfFileUrl</th>
+                <th scope="col" class="sort" data-sort="completion">IsApproved</th>
+                <th scope="col" class="sort" data-sort="completion">IsHome</th>
+       
+                <th scope="col">Sil</th>
+                <th scope="col">Düzenle</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody class="list">
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.ProductId
+                    </td>
+                    <td>
+                        @item.Url
+                    </td>
+                    <td>
+                        @item.Name
+                    </td>
+                    <td>
+                        @item.Title
+                    </td>
+
+                    <td>
+                        @item.Desciption
+                    </td>
+                    <td>
+                        @item.Desciption2
+                    </td>
+                    <td>
+                        @item.Desciption3
+                    </td>
+                    <td>
+                        @item.Desciption4
+                    </td>
+                    <td>
+                        @if (!string.IsNullOrEmpty(item.PImageUrl))
+                        {
+                            <img src="@Url.Content("~/img/" + item.PImageUrl)" alt="Product Image" width="100" />
+                        }
+                    <td>
+
+                        @if (!string.IsNullOrEmpty(item.PImageUrl2))
+                        {
+                            <img src="@Url.Content("~/img/" + item.PImageUrl2)" alt="Product Image 2" width="100" />
+                        }
+                    </td>
+                        @if (!string.IsNullOrEmpty(item.PImageUrl3))
+                        {
+                            <img src="@Url.Content("~/img/" + item.PImageUrl3)" alt="Product Image 3" width="100" />
+                        }
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        @if (!string.IsNullOrEmpty(item.PdfFileUrl))
+                        {
+                            <a href="@Url.Content("~/uploads/" + item.PdfFileUrl)" target="_blank">View PDF</a>
+                        }
+                    </td>
+                    
+                    <td>
+                        @item.PdfFileUrl
+                    </td>
+                    <td>
+                        @item.IsApproved
+                    </td>
+                    <td>
+                        @item.IsHome
+                    </td>
+                    <td>
+                        @item.PdfFileImage
+                    </td>
+                    <td>
+                        @item.PdfFileName
+                    </td>
+                  
+                  
+                    <td>
+                        <a href="/Product/DeleteProduct/@item.ProductId" class="btn btn-danger">Sil</a>
+                    </td>
+                    <td>
+                        <a href="/Product/EditProduct/@item.ProductId" class="btn btn-warning">Düzenle</a>
+                    </td>
+                </tr>
+            }
+
+            
+        </tbody>
+    </table>
+
+    <a href="/Product/AddProduct" class="btn btn-primary">Yeni Ürün Ekle </a>
+</div>
+

@@ -723,6 +723,15 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("Desciption")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Desciption2")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Desciption3")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Desciption4")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool?>("IsApproved")
                         .HasColumnType("bit");
 
@@ -733,6 +742,12 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PImageUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PImageUrl2")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PImageUrl3")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PdfFileImage")
@@ -795,6 +810,15 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("TranslatedDescription")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("TranslatedDescription2")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TranslatedDescription3")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TranslatedDescription4")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("TranslatedImageUrl")
                         .HasColumnType("nvarchar(max)");
 
@@ -805,6 +829,18 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("TranslatedName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TranslatedPImageUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TranslatedPdfFileImage")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TranslatedPdfFileName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TranslatedPdfFileUrl")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TranslatedTitle")

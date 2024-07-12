@@ -14,44 +14,49 @@
 <h1>Arge Sayfası Ekleme</h1>
 <br />
 <br />
-<form asp-action="AddArge" method="post">
+<form asp-action="AddArge" method="post" enctype="multipart/form-data">
     <div class="form-group">
         <label asp-for="Title" class="control-label"></label>
-        <input asp-for="Title" class="form-control" />
+        <textarea asp-for="Title" class="form-control"></textarea>
         <span asp-validation-for="Title" class="text-danger"></span>
     </div>
+
     <div class="form-group">
         <label asp-for="Name" class="control-label"></label>
         <input asp-for="Name" class="form-control" />
         <span asp-validation-for="Name" class="text-danger"></span>
     </div>
- 
     <div class="form-group">
         <label asp-for="Description1" class="control-label"></label>
         <textarea asp-for="Description1" class="form-control"></textarea>
         <span asp-validation-for="Description1" class="text-danger"></span>
     </div>
+
     <div class="form-group">
         <label asp-for="Description2" class="control-label"></label>
         <textarea asp-for="Description2" class="form-control"></textarea>
         <span asp-validation-for="Description2" class="text-danger"></span>
     </div>
 
+
     <div class="form-group">
-        <label asp-for="ImageUrl" class="control-label"></label>
-        <textarea asp-for="ImageUrl" class="form-control"></textarea>
-        <span asp-validation-for="ImageUrl" class="text-danger"></span>
+        <label asp-for="Image_File" class="control-label"></label>
+        <input type="file" asp-for="Image_File" class="form-control">
+        <span asp-validation-for="Image_File" class="text-danger"></span>
     </div>
-      <div class="form-group">
+
+    <div class="form-group">
         <label asp-for="Description3" class="control-label"></label>
         <textarea asp-for="Description3" class="form-control"></textarea>
         <span asp-validation-for="Description3" class="text-danger"></span>
     </div>
+
     <div class="form-group">
         <label asp-for="Description4" class="control-label"></label>
         <textarea asp-for="Description4" class="form-control"></textarea>
         <span asp-validation-for="Description4" class="text-danger"></span>
     </div>
+
     <div class="form-group">
         <label asp-for="Name2" class="control-label"></label>
         <input asp-for="Name2" class="form-control" />

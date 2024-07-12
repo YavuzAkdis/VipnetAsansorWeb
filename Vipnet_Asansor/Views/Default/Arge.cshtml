@@ -1,4 +1,4 @@
-﻿
+﻿@* KULLANICI TARAFI ARGE SAYFASI *@
 @{
     Layout = null;
 }
@@ -71,17 +71,14 @@
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Ürünler</a>
                             <div class="dropdown-menu bg-light mt-2">
-                                <a href="vpc-edc-01-asansor-kontrol-karti.html" class="dropdown-item">VPC-EDC-01 Asansör Kontrol Kartı</a>
-                                <a href="kapi-fotoseli.html" class="dropdown-item">Kapı Fotoseli</a>
-                                <a href="mono-stabil.html" class="dropdown-item">Mono Stabil</a>
+                                @await Component.InvokeAsync("ProductNavbar")
                             </div>
                         </div>
                         <a href="arge" class="nav-item nav-link active">Arge</a>
 
                         <a href="contact" class="nav-item nav-link">İletişim</a>
                     </div>
-                    <butaton type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
-                             data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+                   
                 </div>
             </nav>
         </div>
@@ -95,7 +92,7 @@
                     <h1 class="display-4 text-white mb-4 animated slideInRight">Arge</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center justify-content-lg-start mb-0">
-                            <li class="breadcrumb-item"><a class="text-white" href="#">Anasayfa</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="index">Anasayfa</a></li>
 
                             <li class="breadcrumb-item text-white active" aria-current="page">Arge</li>
                         </ol>
@@ -130,16 +127,7 @@
 
     @await Component.InvokeAsync("ArgeList")
 
-    <!-- Yetenekler -->
-    <div class="container-fluid bg-light mt-3 ">
-        <div class="container py-5">
-            <div class="row g-5 align-items-center">
 
-                @await Component.InvokeAsync("SkillList") 
-
-            </div>
-        </div>
-    </div>
 
     <div class="container-fluid pt-5 mb-5">
         <div class="content container pt-5">
@@ -170,13 +158,12 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="btn btn-link dropdown-toggle" data-bs-toggle="dropdown">Ürünler</a>
                         <div class="dropdown-menu bg-light mt-2">
-                            <a href="vpc-edc-01-asansor-kontrol-karti.html" class="dropdown-item">VPC-EDC-01 Asansör Kontrol Kartı</a>
-                            <a href="kapi-fotoseli.html" class="dropdown-item">Kapı Fotoseli</a>
-                            <a href="mono-stabil.html" class="dropdown-item">Mono Stabil</a>
+                            @await Component.InvokeAsync("ProductNavbar")
                         </div>
                     </div>
                     <a class="btn btn-link" href="arge">Arge</a>
                     <a class="btn btn-link" href="contact">İletişim</a>
+
 
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
@@ -187,10 +174,7 @@
                     <p><i class="fa fa-envelope me-3"></i>info@vipnetasansor.com</p>
                     <div class="d-flex pt-2">
 
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        @await Component.InvokeAsync("SocialMediaList")
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
@@ -201,11 +185,12 @@
                 </div>
             </div>
         </div>
+
         <div class="container wow fadeIn" data-wow-delay="0.1s">
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; 2024 Vipnet Asansör Tüm Hakları Saklıdır.
+                        &copy;  @DateTime.Now.Year. Vipnet Asansör Tüm Hakları Saklıdır.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <!-- Buraya diğer içeriklerinizi ekleyebilirsiniz -->

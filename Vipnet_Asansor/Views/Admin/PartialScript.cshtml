@@ -1,4 +1,8 @@
-﻿<script src="~/argon-dashboard-master/assets/vendor/jquery/dist/jquery.min.js"></script>
+﻿
+@* ADMİN PANELİ SCRİPT *@
+
+
+<script src="~/argon-dashboard-master/assets/vendor/jquery/dist/jquery.min.js"></script>
 <script src="~/argon-dashboard-master/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="~/argon-dashboard-master/assets/vendor/js-cookie/js.cookie.js"></script>
 <script src="~/argon-dashboard-master/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
@@ -7,3 +11,126 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
 <!-- Argon JS -->
 <script src="~/argon-dashboard-master/assets/js/argon.js?v=1.2.0"></script>
+
+<!-- CKEditör -->
+<script type="importmap">
+	{
+		"imports": {
+			"ckeditor5": "https://cdn.ckeditor.com/ckeditor5/42.0.0/ckeditor5.js",
+			"ckeditor5/": "https://cdn.ckeditor.com/ckeditor5/42.0.0/"
+		}
+	}
+</script>
+<script type="module">
+    import {
+        ClassicEditor,
+        Essentials,
+        Paragraph,
+        Bold,
+        Italic,
+        Font,
+        Link,
+        Image,
+        List
+    } from 'ckeditor5';
+
+    ClassicEditor
+        .create(document.querySelector('#editor1'), {
+            plugins: [Essentials, Paragraph, Bold, Italic, Font, Link, Image, List],
+            toolbar: [
+                'undo', 'redo', '|', 'bold', 'italic', '|',
+                'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor', '|',
+                'link', 'imageUpload', 'numberedList', 'bulletedList'
+            ]
+        })
+        .then(editor => {
+            window.editor = editor;
+        })
+        .catch(error => {
+            console.error(error);
+        });
+    ClassicEditor
+        .create(document.querySelector('#editor2'), {
+            plugins: [Essentials, Paragraph, Bold, Italic, Font, Link, Image, List],
+            toolbar: [
+                'undo', 'redo', '|', 'bold', 'italic', '|',
+                'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor', '|',
+                'link', 'imageUpload', 'numberedList', 'bulletedList'
+            ]
+        })
+        .then(editor => {
+            window.editor = editor;
+        })
+        .catch(error => {
+            console.error(error);
+        });
+    ClassicEditor
+        .create(document.querySelector('#editor3'), {
+            plugins: [Essentials, Paragraph, Bold, Italic, Font, Link, Image, List],
+            toolbar: [
+                'undo', 'redo', '|', 'bold', 'italic', '|',
+                'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor', '|',
+                'link', 'imageUpload', 'numberedList', 'bulletedList'
+            ]
+        })
+        .then(editor => {
+            window.editor = editor;
+        })
+        .catch(error => {
+            console.error(error);
+        });
+    ClassicEditor
+        .create(document.querySelector('#editor4'), {
+            plugins: [Essentials, Paragraph, Bold, Italic, Font, Link, Image, List],
+            toolbar: [
+                'undo', 'redo', '|', 'bold', 'italic', '|',
+                'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor', '|',
+                'link', 'imageUpload', 'numberedList', 'bulletedList'
+            ]
+        })
+        .then(editor => {
+            window.editor = editor;
+        })
+        .catch(error => {
+            console.error(error);
+        });
+    ClassicEditor
+        .create(document.querySelector('#editor5'), {
+            plugins: [Essentials, Paragraph, Bold, Italic, Font, Link, Image, List],
+            toolbar: [
+                'undo', 'redo', '|', 'bold', 'italic', '|',
+                'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor', '|',
+                'link', 'imageUpload', 'numberedList', 'bulletedList'
+            ]
+        })
+        .then(editor => {
+            window.editor = editor;
+        })
+        .catch(error => {
+            console.error(error);
+        });
+    ClassicEditor
+        .create(document.querySelector('#editor6'), {
+            plugins: [Essentials, Paragraph, Bold, Italic, Font, Link, Image, List],
+            toolbar: [
+                'undo', 'redo', '|', 'bold', 'italic', '|',
+                'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor', '|',
+                'link', 'imageUpload', 'numberedList', 'bulletedList'
+            ]
+        })
+        .then(editor => {
+            window.editor = editor;
+        })
+        .catch(error => {
+            console.error(error);
+        });
+</script>
+<!-- A friendly reminder to run on a server, remove this during the integration. -->
+<script>
+	window.onload = function () {
+		if (window.location.protocol === 'file:') {
+			alert('This sample requires an HTTP server. Please serve this file with a web server.');
+		}
+	};
+</script>
+<!-- CKEditör -->

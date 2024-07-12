@@ -10,7 +10,7 @@
 <h1>Reference Ekleme</h1>
 <br />
 <br />
-<form asp-action="AddReference" method="post">
+<form asp-action="AddReference" method="post" enctype="multipart/form-data">
 
     <div class="form-group">
         <label asp-for="Name" class="control-label"></label>
@@ -18,10 +18,10 @@
         <span asp-validation-for="Name" class="text-danger"></span>
     </div>
    
-    <div class="form-group">
-        <label asp-for="ImageUrl" class="control-label"></label>
-        <textarea asp-for="ImageUrl" class="form-control"></textarea>
-        <span asp-validation-for="ImageUrl" class="text-danger"></span>
+   <div class="form-group">
+        <label asp-for="Image_File" class="control-label"></label>
+        <input type="file" asp-for="Image_File" class="form-control">
+        <span asp-validation-for="Image_File" class="text-danger"></span>
     </div>
     <div class="form-group">
         <input type="submit" value="Kaydet" class="btn btn-primary" />

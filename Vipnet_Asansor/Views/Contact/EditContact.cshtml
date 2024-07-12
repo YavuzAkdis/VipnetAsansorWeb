@@ -1,4 +1,5 @@
-﻿
+﻿@* İletişim Düzenleme Sayfası Tasarımı *@
+
 
 @model EntityLayer.Concrete.Contact
 
@@ -24,7 +25,7 @@
     </div>
     <div class="form-group">
         <label asp-for="Title" class="control-label"></label>
-        <input asp-for="Title" class="form-control" />
+        <textarea id="editor1" asp-for="Title" class="form-control"></textarea>
         <span asp-validation-for="Title" class="text-danger"></span>
     </div>
    
@@ -38,6 +39,7 @@
         <input asp-for="Address" class="form-control" />
         <span asp-validation-for="Address" class="text-danger"></span>
     </div>
+
     <div class="form-group">
         <label asp-for="Description" class="control-label"></label>
         <textarea asp-for="Description" class="form-control"></textarea>

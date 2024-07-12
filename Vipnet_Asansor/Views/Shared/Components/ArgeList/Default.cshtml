@@ -1,4 +1,7 @@
-﻿@using EntityLayer.Concrete
+﻿@* ARGE SAYFSINDA ARGE PARTİAL TASARIMI *@
+
+
+@using EntityLayer.Concrete
 @model List<Arge>
 
 @foreach(var item in Model)
@@ -10,7 +13,7 @@
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="about-img">
-                        <img class="img-fluid" src="@item.ImageUrl">
+                        <img src="~/img/@item.ImageUrl" alt="Arge Image" />
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">

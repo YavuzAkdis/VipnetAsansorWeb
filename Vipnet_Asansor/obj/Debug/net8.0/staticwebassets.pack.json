@@ -113,6 +113,10 @@
       "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\dizgi2.jpg"
     },
     {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\e874f742-a426-48af-b807-41f54a33ef85.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\e874f742-a426-48af-b807-41f54a33ef85.png"
+    },
+    {
       "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\endustriyel-logo.png",
       "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\endustriyel-logo.png"
     },
@@ -153,6 +157,10 @@
       "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\kapi_fotoseli.jpg"
     },
     {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\kapi_fotoseli.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\kapi_fotoseli.png"
+    },
+    {
       "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\kart.cizgisel2.png",
       "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\kart.cizgisel2.png"
     },
@@ -167,6 +175,10 @@
     {
       "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\mono_stabil.jpg",
       "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\mono_stabil.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\mono_stabil.png",
+      "PackagePath": "staticwebassets\\Vipnet Asansör\\img\\mono_stabil.png"
     },
     {
       "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\Vipnet Asansör\\img\\pLogo.png",
@@ -12433,6 +12445,158 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\3dc1030c-cee8-4159-9b07-5feca814586f.png",
+      "PackagePath": "staticwebassets\\img\\3dc1030c-cee8-4159-9b07-5feca814586f.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\42b77fa9-6c65-4342-b611-4db10be015ac.png",
+      "PackagePath": "staticwebassets\\img\\42b77fa9-6c65-4342-b611-4db10be015ac.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\718084fd-328d-4afc-9429-e436a5749870.png",
+      "PackagePath": "staticwebassets\\img\\718084fd-328d-4afc-9429-e436a5749870.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\Endustriyel-Logo2_165957.png",
+      "PackagePath": "staticwebassets\\img\\Endustriyel-Logo2_165957.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\Endustriyel-Logo2_170945.png",
+      "PackagePath": "staticwebassets\\img\\Endustriyel-Logo2_170945.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\Endustriyel-Logo2_171811.png",
+      "PackagePath": "staticwebassets\\img\\Endustriyel-Logo2_171811.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\Vip_Asansor_Logo_163356.png",
+      "PackagePath": "staticwebassets\\img\\Vip_Asansor_Logo_163356.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\Vip_Asansor_Logo_20240711160852.png",
+      "PackagePath": "staticwebassets\\img\\Vip_Asansor_Logo_20240711160852.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\ab5b8d5a-b6b6-494d-914b-523fe6cf6b61.png",
+      "PackagePath": "staticwebassets\\img\\ab5b8d5a-b6b6-494d-914b-523fe6cf6b61.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\arge-sertifikasyon_091555.jpg",
+      "PackagePath": "staticwebassets\\img\\arge-sertifikasyon_091555.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\asansorTasarim_090953.jpg",
+      "PackagePath": "staticwebassets\\img\\asansorTasarim_090953.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\asansor_111548.png",
+      "PackagePath": "staticwebassets\\img\\asansor_111548.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\asansor_111751.png",
+      "PackagePath": "staticwebassets\\img\\asansor_111751.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\asansor_112010.png",
+      "PackagePath": "staticwebassets\\img\\asansor_112010.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\asansor_112102.png",
+      "PackagePath": "staticwebassets\\img\\asansor_112102.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\asansor_123237.png",
+      "PackagePath": "staticwebassets\\img\\asansor_123237.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\asansör-kart-detay_111548.png",
+      "PackagePath": "staticwebassets\\img\\asansör-kart-detay_111548.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\asansör-kart-detay_111751.png",
+      "PackagePath": "staticwebassets\\img\\asansör-kart-detay_111751.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\asansör-kart-detay_112010.png",
+      "PackagePath": "staticwebassets\\img\\asansör-kart-detay_112010.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\asansör-kart-detay_112102.png",
+      "PackagePath": "staticwebassets\\img\\asansör-kart-detay_112102.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\asansör-kart-detay_123237.png",
+      "PackagePath": "staticwebassets\\img\\asansör-kart-detay_123237.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\b35fb98c-0069-4d69-82aa-727fc799bf54.png",
+      "PackagePath": "staticwebassets\\img\\b35fb98c-0069-4d69-82aa-727fc799bf54.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\d27923d2-d15e-43b0-9a74-1251f3ce0e2b..png",
+      "PackagePath": "staticwebassets\\img\\d27923d2-d15e-43b0-9a74-1251f3ce0e2b..png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\daa07b44-b253-4001-832e-5d48452d25ce.png",
+      "PackagePath": "staticwebassets\\img\\daa07b44-b253-4001-832e-5d48452d25ce.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\daxler_171820.png",
+      "PackagePath": "staticwebassets\\img\\daxler_171820.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\e559593d-d2e7-4ef5-b9f4-288e4047a3f5.png",
+      "PackagePath": "staticwebassets\\img\\e559593d-d2e7-4ef5-b9f4-288e4047a3f5.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\kapi_fotoseli_123453.jpg",
+      "PackagePath": "staticwebassets\\img\\kapi_fotoseli_123453.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\kapi_fotoseli_123556.png",
+      "PackagePath": "staticwebassets\\img\\kapi_fotoseli_123556.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\kapi_fotoseli_143035.png",
+      "PackagePath": "staticwebassets\\img\\kapi_fotoseli_143035.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\monoStabil2_152005.jpg",
+      "PackagePath": "staticwebassets\\img\\monoStabil2_152005.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\mono_stabil_123528.png",
+      "PackagePath": "staticwebassets\\img\\mono_stabil_123528.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\pLogo3_161013.png",
+      "PackagePath": "staticwebassets\\img\\pLogo3_161013.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\pLogo4_163407.png",
+      "PackagePath": "staticwebassets\\img\\pLogo4_163407.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\pLogo6_161220.png",
+      "PackagePath": "staticwebassets\\img\\pLogo6_161220.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\partners784ec746-ca6e-4fff-b67d-048a2e1f9023.png",
+      "PackagePath": "staticwebassets\\img\\partners784ec746-ca6e-4fff-b67d-048a2e1f9023.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\partners81486ef8-7071-4c55-9778-9af516c869bc.png",
+      "PackagePath": "staticwebassets\\img\\partners81486ef8-7071-4c55-9778-9af516c869bc.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\vip_Elektronik_171834.png",
+      "PackagePath": "staticwebassets\\img\\vip_Elektronik_171834.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\img\\vipnetAsansor_085457.png",
+      "PackagePath": "staticwebassets\\img\\vipnetAsansor_085457.png"
+    },
+    {
       "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
@@ -12617,6 +12781,10 @@
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\ckeditor5\\build\\ckeditor.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor5\\build\\ckeditor.js"
+    },
+    {
       "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
@@ -12663,6 +12831,38 @@
     {
       "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\uploads\\Brosur_123237.pdf",
+      "PackagePath": "staticwebassets\\uploads\\Brosur_123237.pdf"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\uploads\\Brosur_123453.pdf",
+      "PackagePath": "staticwebassets\\uploads\\Brosur_123453.pdf"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\uploads\\Brosur_142927.pdf",
+      "PackagePath": "staticwebassets\\uploads\\Brosur_142927.pdf"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\uploads\\Brosur_143035.pdf",
+      "PackagePath": "staticwebassets\\uploads\\Brosur_143035.pdf"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\uploads\\Brosur_152005.pdf",
+      "PackagePath": "staticwebassets\\uploads\\Brosur_152005.pdf"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\video\\asansorKarti_092758.mp4",
+      "PackagePath": "staticwebassets\\video\\asansorKarti_092758.mp4"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\video\\kapiFotoseli_092824.mp4",
+      "PackagePath": "staticwebassets\\video\\kapiFotoseli_092824.mp4"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Vipnet_Asansor\\Vipnet_Asansor\\wwwroot\\video\\monoStabil_092833.mp4",
+      "PackagePath": "staticwebassets\\video\\monoStabil_092833.mp4"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Vipnet_Asansor.Microsoft.AspNetCore.StaticWebAssets.props",

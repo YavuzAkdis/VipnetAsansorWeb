@@ -5,12 +5,22 @@
 @{
     ViewData["Title"] = "AddFeature";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    var currentLanguage = ViewBag.CurrentLanguage as string;
 }
 
 <h1>Feature Ekleme</h1>
 <br />
 <br />
 <form asp-action="AddFeature" method="post" enctype="multipart/form-data">
+
+    <!-- Dil Seçim Dropdown -->
+    <div class="form-group">
+        <label for="languageSelect">Dil Seçin:</label>
+        <select id="languageSelect" name="Language" class="form-control">
+            <option value="tr-TR">Türkçe</option>
+            <option value="en-US">English</option>
+        </select>
+    </div>
 
     <div class="form-group">
         <label asp-for="Name" class="control-label"></label>

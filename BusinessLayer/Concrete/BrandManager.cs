@@ -4,6 +4,7 @@ using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -37,6 +38,14 @@ namespace BusinessLayer.Concrete
         {
            return _brandDal.GetList();
         }
+
+
+        public List<Brand> GetList(string language)
+        {
+            Expression<Func<Brand, bool>> filter = a => a.Language == language;
+            return _brandDal.GetList(filter);
+        }
+
 
         public void TUpdate(Brand t)
         {

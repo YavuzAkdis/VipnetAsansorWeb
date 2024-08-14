@@ -12,6 +12,7 @@ namespace EntityLayer.Concrete
         [Key]
         public int ContactID { get; set; }
 
+        public string? Language { get; set; }
         public string? Title { get; set; }
         public string? Phone { get; set; }
         public string? Mail { get; set; }
@@ -19,8 +20,7 @@ namespace EntityLayer.Concrete
         public string? Description { get; set; }
         public string? Maps { get; set; }
 
-        // Navigasyon özelliği
-        public ICollection<ContactTranslation>? ContactTranslations { get; set; }
+       
     }
 
 }

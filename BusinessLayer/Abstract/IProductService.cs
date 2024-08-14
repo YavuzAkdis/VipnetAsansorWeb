@@ -9,5 +9,10 @@ namespace BusinessLayer.Abstract
 {
     public interface IProductService:IGenericService<Product>
     {
+        // Ürünleri Url göre listeleme
+        Product GetByUrl(string url);
+
+        IEnumerable<Product> GetAllProducts(); // Bu metod diğer ürünleri almak için kullanılacak
+
     }
 }

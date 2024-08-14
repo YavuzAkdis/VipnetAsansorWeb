@@ -9,5 +9,10 @@ namespace DataAccessLayer.Abstract
 {
     public interface IProductDal : IGenericDal<Product>
     {
+        // Ürünleri Url göre listeleme
+        Product Get(Func<Product, bool> filter);
+
+        IEnumerable<Product> GetAll(); 
     }
 }
+

@@ -1,33 +1,37 @@
 ﻿using BusinessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Vipnet_Asansor.Controllers
 {
+    [Authorize(Roles = "Admin")] // Sadece Admin rolüne sahip kullanıcılar erişebilir
     public class ArgeController : Controller
     {
         ArgeManager argeManager = new ArgeManager(new EfArgeDal());
 
-        public IActionResult Index()
+        public IActionResult Index(string language = "tr-TR") // Varsayılan dil 'tr-TR'
         {
             ViewBag.d1 = "Arge Sayfası";
 
-            var values = argeManager.TGetList();
+            var values = argeManager.TGetList().Where(x => x.Language == language).ToList();
             return View(values);
         }
+
 
         // Arge Ekle
         [HttpGet]
         public IActionResult AddArge()
         {
+            ViewBag.CurrentLanguage = Request.Query["language"].ToString(); // Dil bilgisini ViewBag ile aktar
             ViewBag.d1 = "Arge Sayfası Ekle";
 
             return View();
         }
         [HttpPost]
 
-        public IActionResult AddArge(Arge arge, IFormFile Image_File)
+        public IActionResult AddArge(Arge arge, IFormFile Image_File, string language)
         {
             if (Image_File != null)
             {
@@ -55,7 +59,7 @@ namespace Vipnet_Asansor.Controllers
             }
 
 
-
+            arge.Language = language; // Dil bilgisini ata
 
             argeManager.TAdd(arge);
             return RedirectToAction("Index");
@@ -94,6 +98,7 @@ namespace Vipnet_Asansor.Controllers
         [HttpGet]
         public IActionResult EditArge(int id)
         {
+            ViewBag.CurrentLanguage = Request.Query["language"].ToString(); // Dil bilgisini ViewBag ile aktar
             ViewBag.d1 = "Arge Sayfası Güncelleme";
             var values = argeManager.GetById(id);
             return View(values);
@@ -103,7 +108,7 @@ namespace Vipnet_Asansor.Controllers
 
 
 
-        public IActionResult EditArge(Arge arge, IFormFile Image_File)
+        public IActionResult EditArge(Arge arge, IFormFile Image_File, string language)
         {
             if (Image_File != null)
             {
@@ -131,7 +136,7 @@ namespace Vipnet_Asansor.Controllers
             }
 
 
-
+            arge.Language = language; // Dil bilgisini ata
 
             ViewBag.d1 = "Arge Güncelleme";
             if (ModelState.IsValid)

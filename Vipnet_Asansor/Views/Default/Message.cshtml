@@ -1,73 +1,63 @@
 ﻿@using EntityLayer.Concrete
 @model List<Message>
 
-<form action="/Default/Message/" method="post" >
-       <div class="row g-3">
-            <div class="col-md-6">
-                <div class="form-floating">
-                    <input type="text" class="form-control" id="name" name="Name" placeholder="Your Name">
-                    <label for="name">Adınız</label>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-floating">
-                <input type="email" class="form-control" id="email" name="Mail" placeholder="Your Email">
-                    <label for="email">Mail Adresiniz</label>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="form-floating">
-                <input type="text" class="form-control" id="subject" name="Content" placeholder="Subject">
-                    <label for="subject">Konu</label>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a message here" id="message" name="_Message" style="height: 150px"></textarea>
-                    <label for="message">Mesajınız</label>
-                </div>
-            </div>
-            <div class="col-12">
-                <button class="btn btn-dark w-100 py-3" type="submit">Gönder</button>
-            </div>
-        </div>
-   
-</form>
+    @using Microsoft.Extensions.Localization @* Çoklu Dil *@
+
+@inject IStringLocalizer<BusinessLayer.Resource.StringResource> Localizer
 
 
-
-
-@* <form>
+<form id="contactForm" method="post">
     <div class="row g-3">
         <div class="col-md-6">
             <div class="form-floating">
-                <input type="text" class="form-control" id="name" placeholder="Your Name">
-                <label for="name">Adınız</label>
+                <input type="text" class="form-control" id="name" name="Name" placeholder="Your Name">
+                <label for="name">@Localizer["Name"]</label>
             </div>
         </div>
         <div class="col-md-6">
             <div class="form-floating">
-                <input type="email" class="form-control" id="email" placeholder="Your Email">
-                <label for="email">Mail Adresiniz</label>
+                <input type="email" class="form-control" id="email" name="Mail" placeholder="Your Email">
+                <label for="email">@Localizer["Mail"]</label>
             </div>
         </div>
         <div class="col-12">
             <div class="form-floating">
-                <input type="text" class="form-control" id="subject" placeholder="Subject">
-                <label for="subject">Konu</label>
+                <input type="text" class="form-control" id="subject" name="Content" placeholder="Subject">
+                <label for="subject">@Localizer["Subject"]</label>
             </div>
         </div>
         <div class="col-12">
             <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
-                <label for="message">Mesajınız</label>
+                <textarea class="form-control" placeholder="Leave a message here" id="message" name="_Message" style="height: 150px"></textarea>
+                <label for="message">@Localizer["Message"]</label>
             </div>
         </div>
         <div class="col-12">
-            <button class="btn btn-dark w-100 py-3" type="submit">Gönder</button>
+            <button type="button" class="btn btn-dark w-100 py-3" onclick="submitForm()">@Localizer["Send"]</button>
         </div>
     </div>
-</form> *@
+</form>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+@* Mesaj Form Ajax Çözümü *@
+<script>
+    function submitForm() {
+        var formData = $("#contactForm").serialize();
+
+        $.ajax({
+            type: "POST",
+            url: "/Default/Message",
+            data: formData,
+            success: function (response) {
+                // İsteğe bağlı olarak kullanıcıya başarılı bir mesaj gösterebilirsiniz
+                alert("Mesajınız başarıyla gönderildi!");
+            },
+            error: function () {
+                alert("Bir hata oluştu, lütfen tekrar deneyin.");
+            }
+        });
+    }
+</script>
 
 

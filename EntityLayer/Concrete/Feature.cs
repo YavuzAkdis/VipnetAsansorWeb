@@ -13,6 +13,8 @@ namespace EntityLayer.Concrete
     {
         [Key]
         public int FeatureID { get; set; }
+
+        public string? Language { get; set; }
         public string? Name { get; set; }
         public string? Title { get; set; }
         public string? Desciption { get; set; }
@@ -21,8 +23,7 @@ namespace EntityLayer.Concrete
         [NotMapped]
         public IFormFile Video_File { get; set; }
 
-        // Navigasyon özelliği
-        public ICollection<FeatureTranslation>? FeatureTranslations { get; set; }
+     
     }
 
 }

@@ -27,7 +27,7 @@
             <!-- Brand -->
             <div class="sidenav-header align-items-center">
                 <a  href="javascript:void(0)">
-                    <img src="~/Vipnet Asansör/img/Vip_Asansor_Logo.png" class=" logo-img" alt="...">
+                    <img src="~/vipnet-asansor/img/Vip_Asansor_Logo.png" class=" logo-img" alt="...">
                 </a>
             </div>
 
@@ -66,3 +66,25 @@
 </body>
 
 </html>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var languageSelect = document.getElementById('languageSelect');
+
+        // Dil seçimi değiştiğinde sayfayı yenile
+        languageSelect.addEventListener('change', function () {
+            var selectedLanguage = languageSelect.value;
+            var currentUrl = window.location.href.split('?')[0]; // Mevcut URL'yi al
+            window.location.href = currentUrl + '?language=' + selectedLanguage;
+        });
+
+        // URL'den dil bilgisini al ve seçimi ayarla
+        var urlParams = new URLSearchParams(window.location.search);
+        var language = urlParams.get('language');
+
+        if (language && languageSelect) {
+            languageSelect.value = language;
+        }
+    });
+</script>

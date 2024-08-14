@@ -1,78 +1,88 @@
 ﻿
 
-@* ÜRÜNLERİN DETAY SAYFASI *@
+
+
+@* Bu tasarımı Ürünlerin Detay Sayfası _Layout bağlı çalışıyordu ProductController dan geliyordu ancak ürünlerin detay sayfasında 
+
+navbarda ürünler listelenmediği için kullanılmıyor Default Controller altında ProductDetails ile baştan ürün detay sayfası oluşturuldu *@
+
+
+
 
 @model EntityLayer.Concrete.Product
+ @using Microsoft.Extensions.Localization
+
+@inject IStringLocalizer<BusinessLayer.Resource.StringResource> Localizer
 
 @{
     ViewData["Title"] = "Product Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<section id="about" class="about-area pt-110 pb-120 py-5">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-9">
-                <div class="about-title text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-
-                    <h3 class="mb-2">@Model.Name</h3> 
-                    <div class="border-bottom"></div>
-                </div>
-            </div>
-        </div> <!-- row -->
-        <div class="row align-items-center">
-            <div class="col-lg-7 ">
-                <div class="about-image  wow fadeInLeftBig " data-wow-duration="1s" data-wow-delay="0.5s">
-                    <img class="img-fluid" src="~/img/@Model.PImageUrl" alt="Product Image" />
-                </div> 
-            </div>
-            <div class="col-lg-5">
-                <div class="about-content mt-50 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
-
-                    <h5>Genel Bilgiler</h5>
-                    <p class="mb-4">
-                        @Model.Title
-                    </p>
-                    <p class="mb-4">
-                        @Model.Desciption
-                    </p>
-                    <p class="mb-4">
-                        @Model.Desciption2
-                    </p>
-                    @if (!string.IsNullOrEmpty(Model.PdfFileUrl))
-                    {
-                        <a href="@Url.Content("~/uploads/" + Model.PdfFileUrl)" target="_blank" class="btn btn-outline-primary">E Katalog</a> // E KATALOG Buton
-
-                    }
-
-                </div> 
-            </div>
-        </div> <!-- row -->
-    </div> <!-- container -->
-</section>
-
-@if (!string.IsNullOrEmpty(Model.PImageUrl2))
+@if (Model != null)
 {
     <section id="about" class="about-area pt-110 pb-120 py-5">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 order-lg-1 order-2">
-                    <div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <p class="mb-4">
-                            @Model.Desciption3
-                        </p>
-                        <p class="mb-4">
-                            @Model.Desciption4
-                        </p>
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="about-title text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <h3 class="mb-2">@Model.Name</h3>
+                        <div class="border-bottom"></div>
                     </div>
                 </div>
-                <div class="col-lg-7 order-lg-2 order-1">
-                    <div class="about-image mt-50 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <img class="img-fluid" src="~/img/@Model.PImageUrl2" alt="Product Image 2" />
+            </div> <!-- row -->
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="about-image wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <a href="~/img/@Model.PImageUrl" data-lightbox="gallery" data-title="@Model.Name">
+                            <img src="~/img/@Model.PImageUrl" alt="Product Image">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="about-content mt-50 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <h5>@Localizer["generalInformation"]</h5>
+                        <p class="mb-4">@Model.Title</p>
+                        <p class="mb-4">@Model.Desciption</p>
+                        <p class="mb-4">@Model.Desciption2</p>
+                        @if (!string.IsNullOrEmpty(Model.PdfFileUrl))
+                        {
+                            <a href="@Url.Content("~/uploads/" + Model.PdfFileUrl)" target="_blank" class="btn btn-outline-primary">@Localizer["E-Catalog"]</a>
+                            // E KATALOG Buton
+                        }
                     </div>
                 </div>
             </div> <!-- row -->
         </div> <!-- container -->
     </section>
+
+    @if (!string.IsNullOrEmpty(Model.PImageUrl2))
+    {
+        <section id="about" class="about-area pt-110 pb-120 py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 order-lg-1 order-2">
+                        <div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                            <p class="mb-4">@Model.Desciption3</p>
+                            <p class="mb-4">@Model.Desciption4</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 order-lg-2 order-1">
+                        <div class="about-image mt-50 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                            <a href="~/img/@Model.PImageUrl2" data-lightbox="gallery" data-title="@Model.Name">
+                                <img src="~/img/@Model.PImageUrl2" alt="Product Image">
+                            </a>
+                        </div>
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </section>
+    }
+}
+else
+{
+    <p>Ürün bulunamadı.</p>
 }
 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>

@@ -1,33 +1,40 @@
 ﻿using BusinessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Vipnet_Asansor.Controllers
 {
+    [Authorize(Roles = "Admin")] // Sadece Admin rolüne sahip kullanıcılar erişebilir
     public class HeaderController : Controller
     {
        HeaderManager headerManager = new HeaderManager(new EfHeaderDal());
 
-        public IActionResult Index()
+        public IActionResult Index(string language = "tr-TR") // Varsayılan dil 'tr-TR'
         {
             ViewBag.d1 = "Header Listesi";
 
-            var values = headerManager.TGetList();
+            var values = headerManager.TGetList().Where(x => x.Language == language).ToList();
             return View(values);
         }
+
+
+    
 
         // Header Ekle
         [HttpGet]
         public IActionResult AddHeader()
         {
+            ViewBag.CurrentLanguage = Request.Query["language"].ToString(); // Dil bilgisini ViewBag ile aktar
+
             ViewBag.d1 = "Header Ekle";
 
             return View();
         }
         [HttpPost]
 
-        public IActionResult AddHeader(Header header, IFormFile Image_File)
+        public IActionResult AddHeader(Header header, IFormFile Image_File, string language)
         {
             if (Image_File != null)
             {
@@ -54,7 +61,7 @@ namespace Vipnet_Asansor.Controllers
                 header.ImageUrl = yeniisim;
             }
 
-
+            header.Language = language; // Dil bilgisini ata
 
 
             headerManager.TAdd(header);
@@ -93,13 +100,15 @@ namespace Vipnet_Asansor.Controllers
         [HttpGet]
         public IActionResult EditHeader(int id)
         {
+            ViewBag.CurrentLanguage = Request.Query["language"].ToString(); // Dil bilgisini ViewBag ile aktar
+
             ViewBag.d1 = "Header Güncelleme";
             var values = headerManager.GetById(id);
             return View(values);
         }
         [HttpPost]
 
-        public IActionResult EditHeader(Header header, IFormFile Image_File)
+        public IActionResult EditHeader(Header header, IFormFile Image_File, string language)
         {
             if (Image_File != null)
             {
@@ -127,7 +136,7 @@ namespace Vipnet_Asansor.Controllers
             }
 
 
-
+            header.Language = language; // Dil bilgisini ata
 
             ViewBag.d1 = "Partner Güncelleme";
             if (ModelState.IsValid)

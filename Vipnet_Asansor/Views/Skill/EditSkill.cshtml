@@ -12,7 +12,18 @@
 
 
 <form asp-action="EditSkill" method="post">
-    <input type="hidden" asp-for="SkillID" /> 
+    <input type="hidden" asp-for="SkillID" />
+
+    <!-- Dil Seçim Dropdown -->
+    <div class="form-group">
+        <label for="languageSelect">Dil Seçin:</label>
+        <select id="languageSelect" name="Language" class="form-control">
+            <option value="tr-TR">Türkçe</option>
+            <option value="en-US">English</option>
+        </select>
+    </div>
+
+
     <div class="form-group">
         <label asp-for="Icon" class="control-label"></label>
         <input asp-for="Icon" class="form-control" />

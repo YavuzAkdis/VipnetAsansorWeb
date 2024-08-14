@@ -3,10 +3,17 @@
 @using EntityLayer.Concrete
 @model List<Product>
 
+ @using Microsoft.Extensions.Localization
+
+@inject IStringLocalizer<BusinessLayer.Resource.StringResource> Localizer
+
+
+
+
 <div class="container-fluid bg-light py-3">
     <div class="container py-3">
         <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
-            <h2 class="mb-4">Ürünler</h2>
+            <h2 class="mb-4">@Localizer["Products"]</h2>
             <div class="border-bottom"></div>
         </div>
 
@@ -18,7 +25,7 @@
                       
                         <img class="img-fluid" src="~/img/@item.PImageUrl" alt="Product Image" />
                        
-                        <a class="case-overlay text-decoration-none" href="/Product/Details/@item.ProductId">
+                        <a class="case-overlay text-decoration-none" href="/@item.Url">
                             <small>@item.Title</small>
                             <h5 class="lh-base text-white mb-3">
                                 @item.Name

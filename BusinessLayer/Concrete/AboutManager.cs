@@ -1,9 +1,11 @@
 ﻿using BusinessLayer.Abstract;
 using DataAccessLayer.Abstract;
+using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -36,6 +38,12 @@ namespace BusinessLayer.Concrete
         public List<About> TGetList()
         {
             return _abountDal.GetList();
+        }
+
+        public List<About> GetList(string language)
+        {
+            Expression<Func<About, bool>> filter = a => a.Language == language;
+            return _abountDal.GetList(filter);
         }
 
         public void TUpdate(About t)

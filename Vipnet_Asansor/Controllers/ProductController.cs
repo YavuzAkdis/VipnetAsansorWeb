@@ -1,36 +1,52 @@
 ﻿
 //ÜRÜNLERİ EKLE-SİL-GÜNCELLE
 
+using BusinessLayer.Abstract;
 using BusinessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Vipnet_Asansor.Controllers
 {
+   
     public class ProductController : Controller
     {
         ProductManager productManager = new ProductManager(new EfProductDal());
-        
+        private readonly IProductService _productService;
+
+        public ProductController(IProductService productService)
+        {
+            _productService = productService;
+        }
+
         // Product Listele
-        public IActionResult Index()
+        [Authorize(Roles = "Admin")] // Sadece Admin rolüne sahip kullanıcılar erişebilir
+
+        public IActionResult Index(string language = "tr-TR") // Varsayılan dil 'tr-TR'
         {
             ViewBag.d1 = "Product Sayfası";
 
-            var values = productManager.TGetList();
+            var values = productManager.TGetList().Where(x => x.Language == language).ToList();
             return View(values);
         }
+     
 
         // Product Ekle
         [HttpGet]
+        [Authorize(Roles = "Admin")] // Sadece Admin rolüne sahip kullanıcılar erişebilir
         public IActionResult AddProduct()
         {
+            ViewBag.CurrentLanguage = Request.Query["language"].ToString(); // Dil bilgisini ViewBag ile aktar
+
             ViewBag.d1 = "Product Sayfası Ekle";
 
             return View();
         }
 
-        public IActionResult AddProduct(Product product, IFormFile PImage_File, IFormFile PImage_File2, IFormFile PImage_File3, IFormFile PdfFile)
+        [Authorize(Roles = "Admin")] // Sadece Admin rolüne sahip kullanıcılar erişebilir
+        public IActionResult AddProduct(Product product, IFormFile PImage_File, IFormFile PImage_File2, IFormFile PImage_File3, IFormFile PdfFile, string language)
         {
             if (PImage_File != null)
             {
@@ -87,6 +103,8 @@ namespace Vipnet_Asansor.Controllers
 
                 product.PdfFileUrl = fileName;
             }
+
+            product.Language = language; // Dil bilgisini ata
 
             productManager.TAdd(product);
             return RedirectToAction("Index");
@@ -99,6 +117,7 @@ namespace Vipnet_Asansor.Controllers
         //}
 
         // Product Sil
+        [Authorize(Roles = "Admin")] // Sadece Admin rolüne sahip kullanıcılar erişebilir
         public IActionResult DeleteProduct(int id)
         {
             var values = productManager.GetById(id);
@@ -110,14 +129,18 @@ namespace Vipnet_Asansor.Controllers
         // Product Güncelle
 
         [HttpGet]
+        [Authorize(Roles = "Admin")] // Sadece Admin rolüne sahip kullanıcılar erişebilir
         public IActionResult EditProduct(int id)
         {
+            ViewBag.CurrentLanguage = Request.Query["language"].ToString(); // Dil bilgisini ViewBag ile aktar
+
             var product = productManager.GetById(id);
             return View(product);
         }
 
         [HttpPost]
-        public IActionResult EditProduct(Product product, IFormFile PImage_File, IFormFile PImage_File2, IFormFile PImage_File3, IFormFile PdfFile)
+        [Authorize(Roles = "Admin")] // Sadece Admin rolüne sahip kullanıcılar erişebilir
+        public IActionResult EditProduct(Product product, IFormFile PImage_File, IFormFile PImage_File2, IFormFile PImage_File3, IFormFile PdfFile, string language)
         {
             if (PImage_File != null)
             {
@@ -175,32 +198,30 @@ namespace Vipnet_Asansor.Controllers
                 product.PdfFileUrl = fileName;
             }
 
+            product.Language = language; // Dil bilgisini ata
+
             productManager.TUpdate(product);
             return RedirectToAction("Index");
         }
 
-        //
-        //[HttpGet]
-        //public IActionResult EditProduct(int id)
-        //{
-        //    ViewBag.d1 = "Product Sayfası Güncelleme";
-        //    var values = productManager.GetById(id);
-        //    return View(values);
-        //}
-
-        //[HttpPost]
-        //public IActionResult EditProduct(Product product)
-        //{
-        //    ViewBag.d1 = "Product Sayfası Güncelleme";
-        //    productManager.TUpdate(product);
-        //    return RedirectToAction("Index");
-        //}
 
         // product detay
-        public IActionResult Details(int id)
-        {
-            var product = productManager.GetById(id);
-            return View(product);
-        }
+        // Ürünleri Url göre listeleme
+        //public IActionResult Details(string url)
+        //{
+        //    if (string.IsNullOrEmpty(url))
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    var product = _productService.GetByUrl(url);
+        //    if (product == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    return View(product);
+        //}
+
     }
 }

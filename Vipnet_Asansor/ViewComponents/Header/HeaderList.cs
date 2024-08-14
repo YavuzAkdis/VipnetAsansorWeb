@@ -7,9 +7,9 @@ namespace Vipnet_Asansor.ViewComponents.Header
     public class HeaderList : ViewComponent
     {
         HeaderManager headerManager = new HeaderManager(new EfHeaderDal());
-        public IViewComponentResult Invoke()
+        public IViewComponentResult Invoke(string language)
         {
-            var values = headerManager.TGetList();
+            var values = headerManager.TGetList().Where(x => x.Language == language).ToList();
             return View(values);
         }
 

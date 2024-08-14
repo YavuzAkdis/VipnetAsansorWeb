@@ -7,9 +7,9 @@ namespace Vipnet_Asansor.ViewComponents.About
     public class AboutList : ViewComponent
     {
         AboutManager aboutmanager = new AboutManager(new EfAboutDal());
-        public IViewComponentResult Invoke()
+        public IViewComponentResult Invoke(string language)
         {
-            var values = aboutmanager.TGetList();
+            var values = aboutmanager.TGetList().Where(x => x.Language == language).ToList();
             return View(values);
         }
 

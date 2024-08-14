@@ -6,8 +6,10 @@
 @model IEnumerable<EntityLayer.Concrete.Product>
 
 
+
+
     @foreach (var product in Model)
     {
-        <a href="/Product/Details/@product.ProductId" class="dropdown-item">@product.Name</a>
+       <a href="/@product.Url" class="dropdown-item">@product.Name</a>
     }
 

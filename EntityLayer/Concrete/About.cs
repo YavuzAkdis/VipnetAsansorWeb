@@ -13,7 +13,7 @@ namespace EntityLayer.Concrete
     {
         [Key]
         public int AboutID { get; set; }
-
+        public string? Language { get; set; }
         public string? Title { get; set; }
         public string? Name { get; set; }
         public string? Description { get; set; }
@@ -21,7 +21,7 @@ namespace EntityLayer.Concrete
 
         [NotMapped]
         public IFormFile Image_File { get; set; }
-        // Navigasyon özelliği
-        public ICollection<AboutTranslation>? AboutTranslations { get; set; }
+     
+       
     }
 }

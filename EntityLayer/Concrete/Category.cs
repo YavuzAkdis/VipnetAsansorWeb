@@ -11,6 +11,8 @@ namespace EntityLayer.Concrete
     {
         [Key]
         public int CategoryId { get; set; }
+
+        public string? Language { get; set; }
         public string? Title { get; set; }
         public string? Name { get; set; }
         public string? Description { get; set; }
@@ -19,8 +21,7 @@ namespace EntityLayer.Concrete
         public string? Url { get; set; }
      
 
-        // Navigasyon özelliği
-        public ICollection<CategoryTranslation>? CategoryTranslations { get; set; }
+  
         public ICollection<ProductCategory>? ProductCategories { get; set; }
     }
 

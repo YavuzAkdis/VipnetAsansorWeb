@@ -36,6 +36,9 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Language")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
@@ -45,39 +48,6 @@ namespace DataAccessLayer.Migrations
                     b.HasKey("AboutID");
 
                     b.ToTable("Abouts");
-                });
-
-            modelBuilder.Entity("EntityLayer.Concrete.AboutTranslation", b =>
-                {
-                    b.Property<int>("AboutTranslationID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AboutTranslationID"));
-
-                    b.Property<int>("AboutID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Language")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedDescription")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedImageUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedTitle")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("AboutTranslationID");
-
-                    b.HasIndex("AboutID");
-
-                    b.ToTable("AboutTranslations");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Arge", b =>
@@ -103,6 +73,9 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Language")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
@@ -115,51 +88,6 @@ namespace DataAccessLayer.Migrations
                     b.HasKey("ArgeID");
 
                     b.ToTable("Arges");
-                });
-
-            modelBuilder.Entity("EntityLayer.Concrete.ArgeTranslation", b =>
-                {
-                    b.Property<int>("ArgeTranslationID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ArgeTranslationID"));
-
-                    b.Property<int>("ArgeID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Language")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedDescription1")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedDescription2")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedDescription3")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedDescription4")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedImageUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedName2")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedTitle")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("ArgeTranslationID");
-
-                    b.HasIndex("ArgeID");
-
-                    b.ToTable("ArgeTranslations");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Brand", b =>
@@ -176,6 +104,9 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Language")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
@@ -188,42 +119,6 @@ namespace DataAccessLayer.Migrations
                     b.HasKey("BrandID");
 
                     b.ToTable("Brands");
-                });
-
-            modelBuilder.Entity("EntityLayer.Concrete.BrandTranslation", b =>
-                {
-                    b.Property<int>("BrandTranslationID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("BrandTranslationID"));
-
-                    b.Property<int>("BrandID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Language")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedDescription")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedImageUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedTitle")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("BrandTranslationID");
-
-                    b.HasIndex("BrandID");
-
-                    b.ToTable("BrandTranslations");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Category", b =>
@@ -240,6 +135,9 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Language")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
@@ -254,42 +152,6 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("EntityLayer.Concrete.CategoryTranslation", b =>
-                {
-                    b.Property<int>("CategoryTranslationId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CategoryTranslationId"));
-
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Language")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedDescription")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedImageUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedTitle")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("CategoryTranslationId");
-
-                    b.HasIndex("CategoryId");
-
-                    b.ToTable("CategoryTranslations");
-                });
-
             modelBuilder.Entity("EntityLayer.Concrete.Contact", b =>
                 {
                     b.Property<int>("ContactID")
@@ -302,6 +164,9 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Language")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Mail")
@@ -321,45 +186,6 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("Contacts");
                 });
 
-            modelBuilder.Entity("EntityLayer.Concrete.ContactTranslation", b =>
-                {
-                    b.Property<int>("ContactTranslationID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ContactTranslationID"));
-
-                    b.Property<int>("ContactID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Language")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedAddress")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedDescription")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedMail")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedMaps")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedPhone")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedTitle")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("ContactTranslationID");
-
-                    b.HasIndex("ContactID");
-
-                    b.ToTable("ContactTranslations");
-                });
-
             modelBuilder.Entity("EntityLayer.Concrete.Feature", b =>
                 {
                     b.Property<int>("FeatureID")
@@ -369,6 +195,9 @@ namespace DataAccessLayer.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FeatureID"));
 
                     b.Property<string>("Desciption")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Language")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
@@ -385,37 +214,32 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("Features");
                 });
 
-            modelBuilder.Entity("EntityLayer.Concrete.FeatureTranslation", b =>
+            modelBuilder.Entity("EntityLayer.Concrete.Gallery", b =>
                 {
-                    b.Property<int>("FeatureTranslationID")
+                    b.Property<int>("GalleryID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FeatureTranslationID"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("GalleryID"));
 
-                    b.Property<int>("FeatureID")
-                        .HasColumnType("int");
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Language")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("TranslatedDesciption")
+                    b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("TranslatedName")
+                    b.Property<string>("Title")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("TranslatedTitle")
-                        .HasColumnType("nvarchar(max)");
+                    b.HasKey("GalleryID");
 
-                    b.Property<string>("TranslatedVideoUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("FeatureTranslationID");
-
-                    b.HasIndex("FeatureID");
-
-                    b.ToTable("FeatureTranslations");
+                    b.ToTable("Galleries");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Header", b =>
@@ -430,6 +254,9 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImageUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Language")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
@@ -455,51 +282,6 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("Headers");
                 });
 
-            modelBuilder.Entity("EntityLayer.Concrete.HeaderTranslation", b =>
-                {
-                    b.Property<int>("HeaderTranslationID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("HeaderTranslationID"));
-
-                    b.Property<int>("HeaderID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Language")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedDescription")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedImageUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedP1")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedP2")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedP3")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedP4")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedTitle")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("HeaderTranslationID");
-
-                    b.HasIndex("HeaderID");
-
-                    b.ToTable("HeaderTranslations");
-                });
-
             modelBuilder.Entity("EntityLayer.Concrete.MasterBrand", b =>
                 {
                     b.Property<int>("MasterBrandID")
@@ -514,6 +296,9 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Language")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
@@ -526,42 +311,6 @@ namespace DataAccessLayer.Migrations
                     b.HasKey("MasterBrandID");
 
                     b.ToTable("MasterBrands");
-                });
-
-            modelBuilder.Entity("EntityLayer.Concrete.MasterBrandTranslation", b =>
-                {
-                    b.Property<int>("MasterBrandTranslationID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MasterBrandTranslationID"));
-
-                    b.Property<string>("Language")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("MasterBrandID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("TranslatedDescription")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedImageUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedTitle")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("MasterBrandTranslationID");
-
-                    b.HasIndex("MasterBrandID");
-
-                    b.ToTable("MasterBrandTranslations");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Message", b =>
@@ -628,6 +377,9 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Language")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
@@ -660,58 +412,6 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("Portfolios");
                 });
 
-            modelBuilder.Entity("EntityLayer.Concrete.PortfolioTranslation", b =>
-                {
-                    b.Property<int>("PortfolioTranslationID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PortfolioTranslationID"));
-
-                    b.Property<string>("LanguageCode")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("PortfolioID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("TranslatedDescription")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedP1")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedP2")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedP3")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedS1")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedS2")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedSP1")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedSP2")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedTitle")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("PortfolioTranslationID");
-
-                    b.HasIndex("PortfolioID");
-
-                    b.ToTable("PortfolioTranslation");
-                });
-
             modelBuilder.Entity("EntityLayer.Concrete.Product", b =>
                 {
                     b.Property<int>("ProductId")
@@ -737,6 +437,9 @@ namespace DataAccessLayer.Migrations
 
                     b.Property<bool?>("IsHome")
                         .HasColumnType("bit");
+
+                    b.Property<string>("Language")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
@@ -793,99 +496,6 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("ProductCategories");
                 });
 
-            modelBuilder.Entity("EntityLayer.Concrete.ProductTranslation", b =>
-                {
-                    b.Property<int>("ProductTranslationID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductTranslationID"));
-
-                    b.Property<string>("Language")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("ProductID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("TranslatedDescription")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedDescription2")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedDescription3")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedDescription4")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedImageUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool?>("TranslatedIsApproved")
-                        .HasColumnType("bit");
-
-                    b.Property<bool?>("TranslatedIsHome")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("TranslatedName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedPImageUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedPdfFileImage")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedPdfFileName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedPdfFileUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedTitle")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("ProductTranslationID");
-
-                    b.HasIndex("ProductID");
-
-                    b.ToTable("ProductTranslations");
-                });
-
-            modelBuilder.Entity("EntityLayer.Concrete.QuestionTranslation", b =>
-                {
-                    b.Property<int>("QuestionTranslationID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("QuestionTranslationID"));
-
-                    b.Property<string>("Language")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("QuestionID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("TranslatedDescription")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedTitle")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("QuestionTranslationID");
-
-                    b.HasIndex("QuestionID");
-
-                    b.ToTable("QuestionTranslations");
-                });
-
             modelBuilder.Entity("EntityLayer.Concrete.Questions", b =>
                 {
                     b.Property<int>("QuestionsID")
@@ -895,6 +505,9 @@ namespace DataAccessLayer.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("QuestionsID"));
 
                     b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Language")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
@@ -941,39 +554,15 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("Icon")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Language")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Title")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("SkillID");
 
                     b.ToTable("Skills");
-                });
-
-            modelBuilder.Entity("EntityLayer.Concrete.SkillTranslation", b =>
-                {
-                    b.Property<int>("SkillTranslationID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SkillTranslationID"));
-
-                    b.Property<string>("Language")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("SkillID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("TranslatedDescription")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TranslatedTitle")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("SkillTranslationID");
-
-                    b.HasIndex("SkillID");
-
-                    b.ToTable("SkillTranslations");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.SocialMedia", b =>
@@ -1026,103 +615,26 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("Topbars");
                 });
 
-            modelBuilder.Entity("EntityLayer.Concrete.AboutTranslation", b =>
+            modelBuilder.Entity("EntityLayer.Concrete.User", b =>
                 {
-                    b.HasOne("EntityLayer.Concrete.About", "About")
-                        .WithMany("AboutTranslations")
-                        .HasForeignKey("AboutID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
 
-                    b.Navigation("About");
-                });
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-            modelBuilder.Entity("EntityLayer.Concrete.ArgeTranslation", b =>
-                {
-                    b.HasOne("EntityLayer.Concrete.Arge", "Arge")
-                        .WithMany("ArgeTranslations")
-                        .HasForeignKey("ArgeID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Property<string>("Password")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Navigation("Arge");
-                });
+                    b.Property<string>("Role")
+                        .HasColumnType("nvarchar(max)");
 
-            modelBuilder.Entity("EntityLayer.Concrete.BrandTranslation", b =>
-                {
-                    b.HasOne("EntityLayer.Concrete.Brand", "Brand")
-                        .WithMany("BrandTranslations")
-                        .HasForeignKey("BrandID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Property<string>("Username")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Navigation("Brand");
-                });
+                    b.HasKey("Id");
 
-            modelBuilder.Entity("EntityLayer.Concrete.CategoryTranslation", b =>
-                {
-                    b.HasOne("EntityLayer.Concrete.Category", "Category")
-                        .WithMany("CategoryTranslations")
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Category");
-                });
-
-            modelBuilder.Entity("EntityLayer.Concrete.ContactTranslation", b =>
-                {
-                    b.HasOne("EntityLayer.Concrete.Contact", "Contact")
-                        .WithMany("ContactTranslations")
-                        .HasForeignKey("ContactID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Contact");
-                });
-
-            modelBuilder.Entity("EntityLayer.Concrete.FeatureTranslation", b =>
-                {
-                    b.HasOne("EntityLayer.Concrete.Feature", "Feature")
-                        .WithMany("FeatureTranslations")
-                        .HasForeignKey("FeatureID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Feature");
-                });
-
-            modelBuilder.Entity("EntityLayer.Concrete.HeaderTranslation", b =>
-                {
-                    b.HasOne("EntityLayer.Concrete.Header", "Header")
-                        .WithMany("HeaderTranslations")
-                        .HasForeignKey("HeaderID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Header");
-                });
-
-            modelBuilder.Entity("EntityLayer.Concrete.MasterBrandTranslation", b =>
-                {
-                    b.HasOne("EntityLayer.Concrete.MasterBrand", "MasterBrand")
-                        .WithMany("MasterBrandTranslations")
-                        .HasForeignKey("MasterBrandID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("MasterBrand");
-                });
-
-            modelBuilder.Entity("EntityLayer.Concrete.PortfolioTranslation", b =>
-                {
-                    b.HasOne("EntityLayer.Concrete.Portfolio", "Portfolio")
-                        .WithMany("PortfolioTranslations")
-                        .HasForeignKey("PortfolioID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Portfolio");
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.ProductCategory", b =>
@@ -1144,101 +656,14 @@ namespace DataAccessLayer.Migrations
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("EntityLayer.Concrete.ProductTranslation", b =>
-                {
-                    b.HasOne("EntityLayer.Concrete.Product", "Product")
-                        .WithMany("Translations")
-                        .HasForeignKey("ProductID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Product");
-                });
-
-            modelBuilder.Entity("EntityLayer.Concrete.QuestionTranslation", b =>
-                {
-                    b.HasOne("EntityLayer.Concrete.Questions", "Question")
-                        .WithMany("Translations")
-                        .HasForeignKey("QuestionID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Question");
-                });
-
-            modelBuilder.Entity("EntityLayer.Concrete.SkillTranslation", b =>
-                {
-                    b.HasOne("EntityLayer.Concrete.Skill", "Skill")
-                        .WithMany("Translations")
-                        .HasForeignKey("SkillID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Skill");
-                });
-
-            modelBuilder.Entity("EntityLayer.Concrete.About", b =>
-                {
-                    b.Navigation("AboutTranslations");
-                });
-
-            modelBuilder.Entity("EntityLayer.Concrete.Arge", b =>
-                {
-                    b.Navigation("ArgeTranslations");
-                });
-
-            modelBuilder.Entity("EntityLayer.Concrete.Brand", b =>
-                {
-                    b.Navigation("BrandTranslations");
-                });
-
             modelBuilder.Entity("EntityLayer.Concrete.Category", b =>
                 {
-                    b.Navigation("CategoryTranslations");
-
                     b.Navigation("ProductCategories");
-                });
-
-            modelBuilder.Entity("EntityLayer.Concrete.Contact", b =>
-                {
-                    b.Navigation("ContactTranslations");
-                });
-
-            modelBuilder.Entity("EntityLayer.Concrete.Feature", b =>
-                {
-                    b.Navigation("FeatureTranslations");
-                });
-
-            modelBuilder.Entity("EntityLayer.Concrete.Header", b =>
-                {
-                    b.Navigation("HeaderTranslations");
-                });
-
-            modelBuilder.Entity("EntityLayer.Concrete.MasterBrand", b =>
-                {
-                    b.Navigation("MasterBrandTranslations");
-                });
-
-            modelBuilder.Entity("EntityLayer.Concrete.Portfolio", b =>
-                {
-                    b.Navigation("PortfolioTranslations");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Product", b =>
                 {
                     b.Navigation("ProductCategories");
-
-                    b.Navigation("Translations");
-                });
-
-            modelBuilder.Entity("EntityLayer.Concrete.Questions", b =>
-                {
-                    b.Navigation("Translations");
-                });
-
-            modelBuilder.Entity("EntityLayer.Concrete.Skill", b =>
-                {
-                    b.Navigation("Translations");
                 });
 #pragma warning restore 612, 618
         }

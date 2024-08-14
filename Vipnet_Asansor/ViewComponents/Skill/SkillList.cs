@@ -7,12 +7,11 @@ namespace Vipnet_Asansor.ViewComponents.Skill
     public class SkillList : ViewComponent
     {
         SkillManager skillManager = new SkillManager(new EfSkillDal());
-        public IViewComponentResult Invoke()
+        public IViewComponentResult Invoke(string language)
         {
-            var values = skillManager.TGetList();
+            var values = skillManager.TGetList().Where(x => x.Language == language).ToList();
             return View(values);
         }
-
 
     }
 }

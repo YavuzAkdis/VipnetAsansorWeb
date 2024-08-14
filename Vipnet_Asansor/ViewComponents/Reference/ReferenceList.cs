@@ -1,18 +1,22 @@
-﻿using BusinessLayer.Concrete;
-using DataAccessLayer.EntityFramework;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using BusinessLayer.Abstract;
+using System.Linq;
 
-namespace Vipnet_Asansor.ViewComponents.Reference
+namespace Vipnet_Asansor.ViewComponents
 {
-    public class ReferenceList:ViewComponent
+    public class ReferenceList : ViewComponent
     {
-        ReferenceManager referenceManager = new ReferenceManager(new EfReferenceDal());
-        public IViewComponentResult Invoke()
+        private readonly IReferenceService _referenceService;
+
+        public ReferenceList(IReferenceService referenceService)
         {
-            var values = referenceManager.TGetList();
-            return View(values);
+            _referenceService = referenceService;
         }
 
-
+        public IViewComponentResult Invoke()
+        {
+            var references = _referenceService.TGetList(); // veya uygun bir metod
+            return View(references);
+        }
     }
 }

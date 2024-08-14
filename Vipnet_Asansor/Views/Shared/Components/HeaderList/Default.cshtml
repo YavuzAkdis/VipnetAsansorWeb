@@ -12,13 +12,13 @@
             @foreach(var item in Model)
             {
                  <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                <div class="about-img">
+                    <div class="about-img shadow  mb-5 bg-body rounded" >
                         <img src="~/img/@item.ImageUrl" alt="Header Image" />
                 </div>
             </div>
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
 
-                <h1 class="mb-4">@item.Name</h1>
+                <h3 class="mb-4">@item.Name</h3>
                 <p class="mb-4">
                     @item.Description
                 </p>

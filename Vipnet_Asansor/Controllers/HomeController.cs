@@ -1,4 +1,5 @@
 using DataAccessLayer.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -7,6 +8,7 @@ using Vipnet_Asansor.Models;
 
 namespace Vipnet_Asansor.Controllers
 {
+    //[Authorize(Roles = "Admin")] // Sadece Admin rolüne sahip kullanýcýlar eriþebilir
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

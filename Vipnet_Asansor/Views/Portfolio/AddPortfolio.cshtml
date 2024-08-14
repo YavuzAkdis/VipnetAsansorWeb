@@ -7,6 +7,7 @@
 @{
     ViewData["Title"] = "AddPortfolio";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    var currentLanguage = ViewBag.CurrentLanguage as string;
 }
 
 
@@ -14,6 +15,15 @@
 <br />
 <br />
 <form asp-action="AddPortfolio" method="post">
+
+    <!-- Dil Seçim Dropdown -->
+    <div class="form-group">
+        <label for="languageSelect">Dil Seçin:</label>
+        <select id="languageSelect" name="Language" class="form-control">
+            <option value="tr-TR">Türkçe</option>
+            <option value="en-US">English</option>
+        </select>
+    </div>
 
     <div class="form-group">
         <label asp-for="Name" class="control-label"></label>

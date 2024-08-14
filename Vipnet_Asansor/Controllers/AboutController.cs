@@ -5,19 +5,23 @@
 using BusinessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Vipnet_Asansor.Controllers
 {
+    [Authorize(Roles = "Admin")] // Sadece Admin rolüne sahip kullanıcılar erişebilir
     public class AboutController : Controller
     {
         AboutManager aboutManager = new AboutManager(new EfAboutDal());
 
-        public IActionResult Index()
+        //[Route("admin/about")]
+        public IActionResult Index(string language = "tr-TR") // Varsayılan dil 'tr-TR'
         {
             ViewBag.d1 = "About Listesi";
 
-            var values = aboutManager.TGetList();
+            //var values = aboutManager.TGetList().Where(x => x.Language == Thread.CurrentThread.CurrentCulture.Name).ToList();
+            var values = aboutManager.TGetList().Where(x => x.Language == language).ToList();
             return View(values);
         }
 
@@ -25,13 +29,15 @@ namespace Vipnet_Asansor.Controllers
         [HttpGet]
         public IActionResult AddAbout()
         {
+            ViewBag.CurrentLanguage = Request.Query["language"].ToString(); // Dil bilgisini ViewBag ile aktar
+
             ViewBag.d1 = "About Ekle";
 
             return View();
         }
         [HttpPost]
 
-        public IActionResult AddAbout(About about, IFormFile Image_File)
+        public IActionResult AddAbout(About about, IFormFile Image_File, string language)
         {
             if (Image_File != null)
             {
@@ -59,7 +65,7 @@ namespace Vipnet_Asansor.Controllers
             }
 
 
-
+            about.Language = language; // Dil bilgisini ata
 
             aboutManager.TAdd(about);
             return RedirectToAction("Index");
@@ -87,13 +93,15 @@ namespace Vipnet_Asansor.Controllers
         [HttpGet]
         public IActionResult EditAbout(int id)
         {
+            ViewBag.CurrentLanguage = Request.Query["language"].ToString(); // Dil bilgisini ViewBag ile aktar
+
             ViewBag.d1 = "About Güncelleme";
             var values = aboutManager.GetById(id);
             return View(values);
         }
         [HttpPost]
 
-        public IActionResult EditAbout(About about, IFormFile Image_File)
+        public IActionResult EditAbout(About about, IFormFile Image_File, string language)
         {
             if (Image_File != null)
             {
@@ -121,7 +129,7 @@ namespace Vipnet_Asansor.Controllers
             }
 
 
-
+            about.Language = language; // Dil bilgisini ata
 
             ViewBag.d1 = "About Güncelleme";
             if (ModelState.IsValid)

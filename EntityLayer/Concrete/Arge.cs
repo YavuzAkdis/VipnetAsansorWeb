@@ -14,6 +14,7 @@ namespace EntityLayer.Concrete
         [Key]
         public int ArgeID { get; set; }
 
+        public string? Language { get; set; }
         public string? Title { get; set; }
         public string? Name { get; set; }
         public string? Description1 { get; set; }
@@ -26,7 +27,6 @@ namespace EntityLayer.Concrete
         public string? Description3 { get; set; }
 
         public string? Description4 { get; set; }
-        // Navigasyon özelliği
-        public ICollection<ArgeTranslation> ArgeTranslations { get; set; }
+      
     }
 }

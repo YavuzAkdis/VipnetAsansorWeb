@@ -1,33 +1,42 @@
 ﻿using BusinessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Vipnet_Asansor.Controllers
 {
+    [Authorize(Roles = "Admin")] // Sadece Admin rolüne sahip kullanıcılar erişebilir
     public class FeatureController : Controller
     {
        FeatureManager featureManager = new FeatureManager(new EfFeatureDal());
 
-        public IActionResult Index()
+
+        public IActionResult Index(string language = "tr-TR") // Varsayılan dil 'tr-TR'
         {
             ViewBag.d1 = "Feature Listesi";
 
-            var values = featureManager.TGetList();
+            var values = featureManager.TGetList().Where(x => x.Language == language).ToList();
             return View(values);
         }
+
+
+     
 
         // Feature Ekle
         [HttpGet]
         public IActionResult AddFeature()
         {
+            ViewBag.CurrentLanguage = Request.Query["language"].ToString(); // Dil bilgisini ViewBag ile aktar
+
+
             ViewBag.d1 = "Feature Ekle";
 
             return View();
         }
         [HttpPost]
 
-        public IActionResult AddFeature(Feature feature, IFormFile Video_File)
+        public IActionResult AddFeature(Feature feature, IFormFile Video_File, string language)
         {
             if (Video_File != null)
             {
@@ -55,7 +64,7 @@ namespace Vipnet_Asansor.Controllers
             }
 
 
-
+            feature.Language = language; // Dil bilgisini ata
 
             featureManager.TAdd(feature);
             return RedirectToAction("Index");
@@ -93,13 +102,15 @@ namespace Vipnet_Asansor.Controllers
         [HttpGet]
         public IActionResult EditFeature(int id)
         {
+            ViewBag.CurrentLanguage = Request.Query["language"].ToString(); // Dil bilgisini ViewBag ile aktar
+
             ViewBag.d1 = "Feature Güncelleme";
             var values = featureManager.GetById(id);
             return View(values);
         }
         [HttpPost]
 
-        public IActionResult EditFeature(Feature feature, IFormFile Video_File)
+        public IActionResult EditFeature(Feature feature, IFormFile Video_File, string language)
         {
             if (Video_File != null)
             {
@@ -127,7 +138,7 @@ namespace Vipnet_Asansor.Controllers
             }
 
 
-
+            feature.Language = language; // Dil bilgisini ata
 
             ViewBag.d1 = "Feature Güncelleme";
             if (ModelState.IsValid)

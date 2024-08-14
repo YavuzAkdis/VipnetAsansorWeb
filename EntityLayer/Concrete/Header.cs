@@ -13,6 +13,8 @@ namespace EntityLayer.Concrete
     {
         [Key]
         public int HeaderID { get; set; }
+
+        public string? Language { get; set; }
         public string? Title { get; set; }
         public string? Name { get; set; }
         public string? Description { get; set; }
@@ -25,8 +27,7 @@ namespace EntityLayer.Concrete
         public string? P3 { get; set; }
         public string? P4 { get; set; }
 
-        // Navigasyon özelliği
-        public ICollection<HeaderTranslation>? HeaderTranslations { get; set; }
+     
     }
 
 }

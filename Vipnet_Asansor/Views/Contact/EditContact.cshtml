@@ -7,6 +7,7 @@
 @{
     ViewData["Title"] = "EditContact";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    var currentLanguage = ViewBag.CurrentLanguage as string;
 }
 
 
@@ -18,6 +19,17 @@
 
 <form asp-action="EditContact" method="post">
     <input type="hidden" asp-for="ContactID" />
+
+
+    <!-- Dil Seçim Dropdown -->
+    <div class="form-group">
+        <label for="languageSelect">Dil Seçin:</label>
+        <select id="languageSelect" name="Language" class="form-control">
+            <option value="tr-TR">Türkçe</option>
+            <option value="en-US">English</option>
+        </select>
+    </div>
+
     <div class="form-group">
         <label asp-for="Phone" class="control-label"></label>
         <input asp-for="Phone" class="form-control" />
@@ -25,7 +37,7 @@
     </div>
     <div class="form-group">
         <label asp-for="Title" class="control-label"></label>
-        <textarea id="editor1" asp-for="Title" class="form-control"></textarea>
+        <textarea asp-for="Title" class="form-control"></textarea>
         <span asp-validation-for="Title" class="text-danger"></span>
     </div>
    

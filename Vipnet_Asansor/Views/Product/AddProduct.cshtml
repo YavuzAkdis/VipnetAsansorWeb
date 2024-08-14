@@ -5,12 +5,23 @@
 @{
     ViewData["Title"] = "AddProduct";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    var currentLanguage = ViewBag.CurrentLanguage as string;
 }
 
 <h1>Ürün Ekleme</h1>
 <br />
 <br />
 <form asp-action="AddProduct" method="post" enctype="multipart/form-data">
+
+    <!-- Dil Seçim Dropdown -->
+    <div class="form-group">
+        <label for="languageSelect">Dil Seçin:</label>
+        <select id="languageSelect" name="Language" class="form-control">
+            <option value="tr-TR">Türkçe</option>
+            <option value="en-US">English</option>
+        </select>
+    </div>
+
     <div class="form-group">
         <label asp-for="Url" class="control-label"></label>
         <input asp-for="Url" class="form-control" />

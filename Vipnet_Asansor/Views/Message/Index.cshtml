@@ -1,0 +1,75 @@
+﻿@* Mesaj Listeleme Sayfası Tasarımı *@
+
+@using EntityLayer.Concrete
+@model List<Message>
+
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<div class="card-header border-0">
+    <h3 class="mb-3">Mesaj Tablosu</h3>
+</div>
+<!-- Light table -->
+<div class="table-responsive">
+    <table class="table align-items-center table-flush ">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col" class="sort" data-sort="name">#</th>
+                <th scope="col" class="sort" data-sort="budget">Name</th>
+                <th scope="col" class="sort" data-sort="status">Mail</th>
+                <th scope="col" class="sort" data-sort="completion">Konu</th>
+                <th scope="col" class="sort" data-sort="budget">Date</th>
+                <th scope="col" class="sort" data-sort="status">Status</th>
+                <th scope="col" class="sort" data-sort="completion">Mesaj</th>
+              
+
+            </tr>
+        </thead>
+        <tbody class="list">
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.MessageID
+                    </td>
+                 
+                    <td>
+                        @item.Name
+                    </td>
+                    <td>
+                        @item.Mail
+                    </td>
+
+                    <td>
+                        @item.Content
+                    </td>
+
+                    <td>
+                        @item.Date
+                    </td>
+
+                    <td>
+                        @item.Status
+                    </td>
+
+                    <td>
+                        @item._Message
+                    </td>
+
+                   
+                </tr>
+            }
+
+
+        </tbody>
+    </table>
+
+  
+</div>
+

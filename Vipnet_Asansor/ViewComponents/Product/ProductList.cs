@@ -7,13 +7,11 @@ namespace Vipnet_Asansor.ViewComponents.ProductList
     public class ProductList : ViewComponent
     {
         ProductManager productManager = new ProductManager(new EfProductDal());
-        public IViewComponentResult Invoke()
+        public IViewComponentResult Invoke(string language)
         {
-            var values = productManager.TGetList();
-
+            var values = productManager.TGetList().Where(x => x.Language == language).ToList();
             return View(values);
         }
-
 
     }
 }

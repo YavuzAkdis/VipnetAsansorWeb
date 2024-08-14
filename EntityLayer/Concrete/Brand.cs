@@ -13,6 +13,7 @@ namespace EntityLayer.Concrete
     {
         [Key]
         public int BrandID { get; set; }
+        public string? Language { get; set; }
         public string? Name { get; set; }
         public string? Title { get; set; }
         public string? Description { get; set; }
@@ -22,8 +23,7 @@ namespace EntityLayer.Concrete
         public IFormFile Image_File { get; set; }
         public string? Url { get; set; }
 
-        // Navigasyon özelliği
-        public ICollection<BrandTranslation>? BrandTranslations { get; set; }
+       
     }
 
 }

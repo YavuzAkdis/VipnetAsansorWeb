@@ -14,6 +14,8 @@ namespace EntityLayer.Concrete
     {
         [Key]
         public int PortfolioID { get; set; }
+
+        public string? Language { get; set; }
         public string? Name { get; set; }
         public string? Title { get; set; }
         public string? Description { get; set; }
@@ -26,7 +28,7 @@ namespace EntityLayer.Concrete
 
         public string? S2 { get; set; }
         public string? SP2 { get; set; }
-        public ICollection<PortfolioTranslation>? PortfolioTranslations { get; set; }
+       
     }
 
 }

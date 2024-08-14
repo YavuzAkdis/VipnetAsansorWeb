@@ -1,34 +1,38 @@
 ﻿using BusinessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Drawing.Drawing2D;
 
 namespace Vipnet_Asansor.Controllers
 {
+    //[Authorize(Roles = "Admin")] // Sadece Admin rolüne sahip kullanıcılar erişebilir
     public class BrandController : Controller
     {
         BrandManager brandManager = new BrandManager(new EfBrandDal());
 
-        public IActionResult Index()
+        public IActionResult Index(string language = "tr-TR") // Varsayılan dil 'tr-TR'
         {
             ViewBag.d1 = "Markalarımız Listesi";
 
-            var values = brandManager.TGetList();
+            var values = brandManager.TGetList().Where(x => x.Language == language).ToList();
             return View(values);
         }
+
 
         // Marka Ekle
         [HttpGet]
         public IActionResult AddBrand()
         {
+            ViewBag.CurrentLanguage = Request.Query["language"].ToString(); // Dil bilgisini ViewBag ile aktar
             ViewBag.d1 = "Markalarımız Ekle";
 
             return View();
         }
         [HttpPost]
 
-        public IActionResult AddBrand(Brand brand, IFormFile Image_File)
+        public IActionResult AddBrand(Brand brand, IFormFile Image_File, string language)
         {
             if (Image_File != null)
             {
@@ -56,7 +60,7 @@ namespace Vipnet_Asansor.Controllers
             }
 
 
-
+            brand.Language = language; // Dil bilgisini ata
 
             brandManager.TAdd(brand);
             return RedirectToAction("Index");
@@ -96,13 +100,14 @@ namespace Vipnet_Asansor.Controllers
         [HttpGet]
         public IActionResult EditBrand(int id)
         {
+            ViewBag.CurrentLanguage = Request.Query["language"].ToString(); // Dil bilgisini ViewBag ile aktar
             ViewBag.d1 = "Markalarımız Güncelleme";
             var values = brandManager.GetById(id);
             return View(values);
         }
         [HttpPost]
 
-        public IActionResult EditBrand(Brand brand, IFormFile Image_File)
+        public IActionResult EditBrand(Brand brand, IFormFile Image_File, string language)
         {
             if (Image_File != null)
             {
@@ -130,7 +135,7 @@ namespace Vipnet_Asansor.Controllers
             }
 
 
-
+            brand.Language = language; // Dil bilgisini ata
 
             ViewBag.d1 = "Partner Güncelleme";
             if (ModelState.IsValid)
@@ -140,15 +145,6 @@ namespace Vipnet_Asansor.Controllers
             }
             return View(brand);
         }
-        //public IActionResult EditBrand(Brand brand)
-        //{
-        //    ViewBag.d1 = "Markalarımız Güncelleme";
-        //    if (ModelState.IsValid)
-        //    {
-        //        brandManager.TUpdate(brand);
-        //        return RedirectToAction("Index");
-        //    }
-        //    return View(brand);
-        //}
+      
     }
 }

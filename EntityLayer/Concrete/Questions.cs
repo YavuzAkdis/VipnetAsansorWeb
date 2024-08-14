@@ -11,11 +11,12 @@ namespace EntityLayer.Concrete
     {
         [Key]
         public int QuestionsID { get; set; }
+
+        public string? Language { get; set; }
         public string? Title { get; set; }
         public string? Name { get; set; }
         public string? Description { get; set; }
 
-        // İhtiyaca bağlı olarak, dil tabanlı çeviriler için ek bir koleksiyon eklenebilir.
-        public ICollection<QuestionTranslation>? Translations { get; set; }
+        
     }
 }

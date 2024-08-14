@@ -11,6 +11,8 @@ namespace EntityLayer.Concrete
     {
         [Key]
         public int MessageID { get; set; }
+
+     
         public string? Name { get; set; }
 
         public string? Mail { get; set; }

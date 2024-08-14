@@ -1,26 +1,31 @@
 ﻿using BusinessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Vipnet_Asansor.Controllers
 {
+    [Authorize(Roles = "Admin")] // Sadece Admin rolüne sahip kullanıcılar erişebilir
     public class MasterBrandController : Controller
     {
         MasterBrandManager masterBrandManager = new MasterBrandManager(new EfMasterBrandDal());
 
-        public IActionResult Index()
+        public IActionResult Index(string language = "tr-TR") // Varsayılan dil 'tr-TR'
         {
             ViewBag.d1 = "AnaMarka Listesi";
 
-            var values = masterBrandManager.TGetList();
+            var values = masterBrandManager.TGetList().Where(x => x.Language == language).ToList();
             return View(values);
         }
 
+
+  
         // AnaMarka Ekle
         [HttpGet]
         public IActionResult AddMasterBrand()
         {
+            ViewBag.CurrentLanguage = Request.Query["language"].ToString(); // Dil bilgisini ViewBag ile aktar
             ViewBag.d1 = "AnaMarka Ekle";
 
             return View();
@@ -32,7 +37,7 @@ namespace Vipnet_Asansor.Controllers
         //    return RedirectToAction("Index");
         //}
 
-        public IActionResult AddMasterBrand(MasterBrand masterbrand, IFormFile Image_File)
+        public IActionResult AddMasterBrand(MasterBrand masterbrand, IFormFile Image_File, string language)
         {
             if (Image_File != null)
             {
@@ -60,7 +65,7 @@ namespace Vipnet_Asansor.Controllers
             }
 
 
-
+            masterbrand.Language = language; // Dil bilgisini ata
 
             masterBrandManager.TAdd(masterbrand);
             return RedirectToAction("Index");
@@ -94,13 +99,14 @@ namespace Vipnet_Asansor.Controllers
         [HttpGet]
         public IActionResult EditMasterBrand(int id)
         {
+            ViewBag.CurrentLanguage = Request.Query["language"].ToString(); // Dil bilgisini ViewBag ile aktar
             ViewBag.d1 = "AnaMarka Güncelleme";
             var values = masterBrandManager.GetById(id);
             return View(values);
         }
         [HttpPost]
 
-        public IActionResult EditMasterBrand(MasterBrand masterbrand, IFormFile Image_File)
+        public IActionResult EditMasterBrand(MasterBrand masterbrand, IFormFile Image_File, string language)
         {
             if (Image_File != null)
             {
@@ -128,9 +134,9 @@ namespace Vipnet_Asansor.Controllers
             }
 
 
+            masterbrand.Language = language; // Dil bilgisini ata
 
-
-            ViewBag.d1 = "Partner Güncelleme";
+            ViewBag.d1 = "AnaMarka Güncelleme";
             if (ModelState.IsValid)
             {
                 masterBrandManager.TUpdate(masterbrand);

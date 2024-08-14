@@ -1,25 +1,27 @@
-﻿@* About Güncelleme Sayfası Tasarımı *@
-
-@model EntityLayer.Concrete.About
+﻿@model EntityLayer.Concrete.About
 
 @{
-    ViewData["Title"] = "EditAbout";
+    ViewData["Title"] = "AddAbout";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-
-
-<div class="card-header border-0">
-    <h3 class="mb-0">About Düzenleme Sayfası</h3>
-</div>
+<h1>@ViewData["Title"]</h1>
 <br />
+@* <form asp-action="@(ViewData["Title"] == "AddAbout" ? "AddAbout" : "EditAbout")" method="post" enctype="multipart/form-data"> *@
+<form asp-action="AddAbout" method="post" enctype="multipart/form-data">
 
+    <!-- Dil Seçim Dropdown -->
+    <div class="form-group">
+        <label for="languageSelect">Dil Seçin:</label>
+        <select id="languageSelect" name="Language" class="form-control">
+            <option value="tr-TR">Türkçe</option>
+            <option value="en-US">English</option>
+        </select>
+    </div>
 
-<form asp-action="EditAbout" method="post" enctype="multipart/form-data">
-    <input type="hidden" asp-for="AboutID" />
     <div class="form-group">
         <label asp-for="Title" class="control-label"></label>
-        <textarea  asp-for="Title" class="form-control"></textarea>
+        <textarea asp-for="Title" class="form-control"></textarea>
         <span asp-validation-for="Title" class="text-danger"></span>
     </div>
     <div class="form-group">
@@ -27,21 +29,17 @@
         <input asp-for="Name" class="form-control" />
         <span asp-validation-for="Name" class="text-danger"></span>
     </div>
-
     <div class="form-group">
         <label asp-for="Description" class="control-label"></label>
-        <textarea  asp-for="Description" class="form-control"></textarea>
+        <textarea asp-for="Description" class="form-control"></textarea>
         <span asp-validation-for="Description" class="text-danger"></span>
     </div>
-
     <div class="form-group">
         <label asp-for="Image_File" class="control-label"></label>
-        <img src="/img/@Model.ImageUrl" width="100" height="100" alt="Image" />
         <input type="file" asp-for="Image_File" class="form-control">
         <span asp-validation-for="Image_File" class="text-danger"></span>
     </div>
 
- 
     <div class="form-group">
         <input type="submit" value="Kaydet" class="btn btn-primary" />
     </div>

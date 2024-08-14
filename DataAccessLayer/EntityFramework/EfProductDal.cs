@@ -1,15 +1,30 @@
 ﻿using DataAccessLayer.Abstract;
+using DataAccessLayer.Concrete;
 using DataAccessLayer.Repository;
 using EntityLayer.Concrete;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace DataAccessLayer.EntityFramework
+public class EfProductDal : GenericRepository<Product>, IProductDal
 {
-    public class EfProductDal : GenericRepository<Product>, IProductDal
+    private readonly Context _context;
+
+    public EfProductDal()
     {
+    }
+
+    public EfProductDal(Context context)
+    {
+        _context = context;
+    }
+
+    // Ürünleri Url göre listeleme
+    public Product Get(Func<Product, bool> filter)
+    {
+        return _context.Set<Product>().FirstOrDefault(filter);
+    }
+
+
+    public IEnumerable<Product> GetAll()
+    {
+        return _context.Products.ToList();
     }
 }

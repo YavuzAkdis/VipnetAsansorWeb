@@ -3,6 +3,34 @@
 @using EntityLayer.Concrete
 @model List<Gallery>
 
+@* 
+<div class="panorama-slider px-2 px-lg-4 pt-3">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+
+            @foreach (var item in Model)
+            {
+                <div class="swiper-slide">
+                    <a href="@Url.Content("~/img/" + item.ImageUrl)" data-lightbox="gallery" data-title="@item.Name">
+                        <figure class="portfolio-item">
+                            <img src="@Url.Content("~/img/" + item.ImageUrl)" class="img-fluid gallery-img shadow mb-3 rounded" alt="@item.Name" />
+                            <figcaption class="text-center mt-2">
+                                <div>@item.Title</div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+
+            }
+         
+          
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+ *@
+
+
+
 <div class="section px-2 px-lg-4 pt-3" id="portfolio">
     <div class="container">
         <div class="row">

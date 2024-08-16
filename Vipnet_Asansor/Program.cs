@@ -43,7 +43,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("AdminOnly", policy =>
-        policy.RequireClaim(ClaimTypes.Role, "Admin")); // Admin rolü gerektiren bir politika
+        policy.RequireClaim(ClaimTypes.Role, "admin")); // Admin rolü gerektiren bir politika
 });
 
 builder.Services.AddSession(options =>

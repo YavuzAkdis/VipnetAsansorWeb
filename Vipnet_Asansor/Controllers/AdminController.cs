@@ -11,6 +11,7 @@ namespace Vipnet_Asansor.Controllers
 
     {
         [Authorize(Roles = "Admin")] // Sadece Admin rolüne sahip kullanıcılar erişebilir
+        [Route("admin")]
         public IActionResult Index()
         {
             return View(); // Bu, /Views/Admin/Index.cshtml dosyasını kullanacak

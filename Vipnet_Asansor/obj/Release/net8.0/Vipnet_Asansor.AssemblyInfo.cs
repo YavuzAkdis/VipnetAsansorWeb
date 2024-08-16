@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Vipnet_Asansor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+99108469766eba8c9358a684d02ffe2eec12ae58")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2090f89d1c68bb798be7b8576e091ca2cef3ed74")]
 [assembly: System.Reflection.AssemblyProductAttribute("Vipnet_Asansor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Vipnet_Asansor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
